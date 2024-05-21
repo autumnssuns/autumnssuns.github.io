@@ -1,0 +1,33 @@
+---
+import { Icon } from 'astro-icon/components';
+---
+
+<div class="flex flex-row bg-blue-950 p-6 text-white justify-between rounded mb-10">
+  <div class="flex flex-col gap-2">
+    <p class="text-2xl">Meet <span class="text-yellow-400 font-semibold">Dan Tran</span></p>
+    <div class="border-l-4 pl-6 font-medium">
+      <p>Software Developer</p>
+      <p>Web Developer</p>
+      <p>Educator</p>
+    </div>
+  </div>
+  <div class="flex gap-2">
+    <img class="w-[150px] h-[150px] bg-blue-300 rounded-full block border-[1rem] border-white mb-[-4rem] mt-4" src="images/avatar.jpg" alt="Profile Picture">
+    <div class="flex flex-col gap-1">
+      <div class="icon">
+        <Icon name="mdi:share" size={24}/>
+      </div>
+      <div class="icon">
+        <a href="https://github.com/autumnssuns" target="_blank">
+          <Icon name="mdi:github" size={24}/>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .icon {
+    @apply bg-white text-blue-950 rounded hover:bg-blue-400 hover:text-white hover:cursor-pointer;
+  }
+</style>
