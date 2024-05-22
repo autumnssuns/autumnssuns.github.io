@@ -4,7 +4,7 @@ export default {
 	theme: {
 		extend: {
 			backgroundImage: {
-				'default': "url('/images/background.jpg')",
+				'default': "url('astro-profile/images/background.jpg')",
 			},
 		},
 	},
