@@ -1,13 +1,21 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title = "Astro" } = Astro.props;
+---
+
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>{title}</title>
 	</head>
-	<body class="flex justify-center">
-		<div class="shadow-lg w-[750px] p-8 m-8 rounded">
+	<body class="flex justify-center bg-default bg-cover bg-fixed">
+		<div class="p-8 m-8 max-w-[950px] rounded bg-white shadow-blue-900 shadow-lg">
 			<slot />
 		</div>
 	</body>

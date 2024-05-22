@@ -2,8 +2,9 @@
 import DefaultLayout from '../layouts/DefaultLayout.astro'
 import Header from '../components/profile/Header.astro'
 import Body from '../components/profile/Body.md'
+const title = 'Dan Tran'
 ---
-<DefaultLayout>
+<DefaultLayout title={title}>
   <Header />
 	<Body />
 </DefaultLayout>
