@@ -2,7 +2,7 @@
 import { Icon } from 'astro-icon/components';
 ---
 
-<div class="flex flex-row bg-blue-950 p-6 text-white justify-between rounded mb-10">
+<div class="flex flex-row bg-gradient-to-r from-magenta-500 to-turquoise-500 p-6 text-white justify-between rounded mb-10">
   <div class="flex flex-col gap-2">
     <p class="text-2xl">Meet <span class="text-yellow-400 font-semibold">Dan Tran</span></p>
     <div class="border-l-4 pl-6 font-medium">
@@ -14,7 +14,7 @@ import { Icon } from 'astro-icon/components';
   <div class="flex gap-2">
     <img class="w-[150px] h-[150px] bg-blue-300 rounded-full block border-[1rem] border-white mb-[-4rem] mt-4" src="./images/avatar.jpg" alt="Profile Picture">
     <div class="flex flex-col gap-1">
-      <div class="icon">
+      <div class="icon" id="share">
         <Icon name="mdi:share" size={24}/>
       </div>
       <div class="icon">
@@ -31,3 +31,15 @@ import { Icon } from 'astro-icon/components';
     @apply bg-white text-blue-950 rounded hover:bg-blue-400 hover:text-white hover:cursor-pointer;
   }
 </style>
+
+<script>
+  const share = document.getElementById('share');
+  // Open modal dialog
+  if (share) {
+    share.addEventListener('click', () => {
+      const dialog = document.getElementById('modal') as HTMLDialogElement;
+      // Add "open" property to dialog element
+      dialog.showModal();
+    });
+  }
+</script>

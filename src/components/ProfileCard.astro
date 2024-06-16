@@ -1,0 +1,42 @@
+---
+import { Icon } from 'astro-icon/components';
+---
+<div class="p-2.5 shadow-md w-fit h-fit shadow-gray-500 bg-gradient-to-br from-magenta-400 to-turquoise-400 rounded-lg flex-col justify-center items-start gap-2.5 inline-flex">
+    <div class="self-stretch grow shrink basis-0 p-2.5 bg-white rounded-lg shadow-inner shadow-gray-500 flex-col justify-between items-center flex">
+        <div class="self-stretch grow shrink basis-0 p-[5px] justify-start items-start gap-5 inline-flex">
+            <div class="self-stretch flex-col justify-start items-start gap-2.5 inline-flex">
+                <div class="p-2.5 bg-gradient-to-tl from-magenta-100 to-turquoise-100 rounded-[15px] shadow flex-col justify-center items-center gap-2.5 flex">
+                    <img class="w-20 h-20 rounded-[15px] border-2 border-white" src="./images/avatar.jpg" />
+                    <div class="flex-col justify-start items-start gap-2.5 flex">
+                        <div class="text-black text-[28px] font-black">Dan Tran</div>
+                    </div>
+                </div>
+                <div class="self-stretch justify-start items-start gap-[5px] inline-flex">
+                    <div class="grow shrink basis-0 flex-col justify-start items-start gap-[5px] inline-flex">
+                        <div class="text-black text-xs font-medium">Web Developer</div>
+                        <div class="text-black text-xs font-medium">Software Engineer</div>
+                    </div>
+                </div>
+            </div>
+            <div class="grow shrink basis-0 self-stretch flex-col justify-start items-start gap-[5px] inline-flex">
+                <img class="w-[200px] h-[200px] object-scale-down" src="./images/qrcode.png" />
+            </div>
+        </div>
+    </div>
+    <div class="self-stretch px-2.5 py-[5px] bg-white opacity-70 rounded-[5px] backdrop-blur-sm justify-start items-start gap-5 inline-flex">
+        <div class="grow shrink basis-0 h-[15px] justify-between items-center flex">
+            <div class="justify-center items-center gap-1 flex">
+                <Icon name="mdi:email" size={18}/>
+                <a href="mailto:dan.k.tran.w@gmail.com" target="_blank" class="text-center text-black text-[10px] font-normal underline">dan.k.tran.w@gmail.com</a>
+            </div>
+            <div class="justify-end items-center gap-1 flex">
+                <Icon name="mdi:github" size={18}/>
+                <a href="https://github.com/autumnssuns" target="_blank" class="text-center text-black text-[10px] font-normal underline">autumnssuns</a>
+            </div>
+            <div class="justify-center items-center gap-[5px] flex">
+                <Icon name="mdi:linkedin" size={18}/>
+                <a href="https://www.linkedin.com/in/dan-k-tran" target="_blank" class="text-center text-black text-[10px] font-normal underline">dan-k-tran</a>
+            </div>
+        </div>
+    </div>
+</div>

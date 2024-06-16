@@ -2,9 +2,31 @@
 import DefaultLayout from '../layouts/DefaultLayout.astro'
 import Header from '../components/profile/Header.astro'
 import Body from '../components/profile/Body.md'
+import Card from '../components/ProfileCard.astro'
 const title = 'Dan Tran'
 ---
 <DefaultLayout title={title}>
   <Header />
 	<Body />
+  <dialog id="modal" class="fixed top-0 rounded shadow-md shadow-black backdrop:bg-gray-500 backdrop:bg-opacity-50">
+    <div id="modal-header" class="flex justify-between p-4 border-b-2">
+      <h1 class="text-2xl">Share My Profile</h1>
+      <button class="text-2xl" onclick="document.getElementById('modal').close()">✖</button>
+    </div>
+    <div id="modal-body" class="flex p-4 justify-center w-full h-full items-center">
+      <Card />
+    </div>
+  </dialog>
 </DefaultLayout>
+
+<script>
+  const modal = document.getElementById('modal') as HTMLDialogElement;
+  const body = document.querySelector('body') as HTMLBodyElement;
+  // Close modal when clicking outside
+  body.addEventListener('click', (e) => {
+    // Include padding
+    if (e.target === modal) {
+      modal.close();
+    }
+  });
+</script>
