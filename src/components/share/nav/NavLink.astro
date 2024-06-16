@@ -1,0 +1,12 @@
+---
+interface Props {
+  to: string;
+}
+const { to } = Astro.props;
+---
+
+<div class="flex items-center justify-between w-full sm:w-auto">
+  <a href={ to } class="flex items-center">
+    <slot />
+  </a>
+</div>

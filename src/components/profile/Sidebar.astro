@@ -1,0 +1,86 @@
+---
+import { Icon } from 'astro-icon/components';
+import Contact from '../share/Contact.astro';
+---
+
+<div class="
+  lg:sticky
+  relative
+  bg-white
+  lg:top-12
+  before:absolute
+  before:w-full
+  before:h-full
+  before:-z-10
+  before:bg-gradient-to-r
+  before:from-magenta-500
+  before:to-turquoise-500
+  before:left-0
+  before:top-0
+  before:blur-[3px]
+  before:rounded-3xl
+  rounded-3xl
+  shadow-md
+  h-fit">
+  <div class="flex flex-row justify-between relative lg:flex-col items-center rounded-3xl p-10 bg-white w-full h-full gap-5 text-black">
+    <div class="flex flex-col items-center gap-2">
+      <img class="border-turquoise-50 border-2 min-w-[150px] w-[150px] h-[150px] rounded-3xl" src="./images/avatar.jpg" alt="Profile Picture">
+      <div class="flex flex-row items-center gap-2 text-xs cursor-pointer hover:bg-gradient-to-br hover:text-white hover:from-magenta hover:to-turquoise font-semibold p-1 rounded shadow-md bg-gradient-to-br from-fuchsia-200 to-cyan-100" id="share">
+        <Icon name="mdi:account-card-details" size={18}/>
+        Digital Card
+      </div>
+    </div>
+    <div class="flex gap-2 flex-col">
+      <p class="text-black text-4xl font-semibold">Dan Tran</p>
+      <div class="flex lg:items-center flex-col gap-2">
+        <p class="role">Software Developer</p>
+        <p class="role">Web Developer</p>
+        <p class="role">Educator</p>
+      </div>
+    </div>
+    <div class="w-[2px] h-full lg:h-[2px] lg:w-full bg-gradient-to-r from-white via-turquoise to-white"></div>
+    <div class="sm:flex flex-col gap-4 hidden">
+      <!-- Contacts -->
+      <Contact title="Email" icon="mdi:email">
+        <a href="mailto:dan.k.tran.w@gmail.com">
+          dan.k.tran.w@gmail.com
+        </a>
+      </Contact>
+      <Contact title="GitHub" icon="mdi:github">
+        <a href="https://github.com/autumnssuns" target="_blank">
+          autumnssuns
+        </a>
+      </Contact>
+      <Contact title="Linked In" icon="mdi:linkedin">
+        <a href="https://www.linkedin.com/in/dan-k-tran" target="_blank">
+          Dan Tran
+        </a>
+      </Contact>
+      <Contact title="Location" icon="mdi:map-marker">
+        Brisbane, Queensland, Australia
+      </Contact>
+    </div>
+  </span>
+</div>
+
+<style>
+  .icon {
+    @apply bg-white text-blue-950 rounded hover:bg-blue-400 hover:text-white hover:cursor-pointer;
+  }
+
+  .role {
+    @apply rounded p-1 shadow bg-gradient-to-r from-pink-50 to-cyan-50;
+  }
+</style>
+
+<script>
+  const share = document.getElementById('share');
+  // Open modal dialog
+  if (share) {
+    share.addEventListener('click', () => {
+      const dialog = document.getElementById('modal') as HTMLDialogElement;
+      // Add "open" property to dialog element
+      dialog.showModal();
+    });
+  }
+</script>
