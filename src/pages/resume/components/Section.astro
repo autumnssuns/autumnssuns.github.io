@@ -6,7 +6,7 @@ type Props = {
 }
 const { title, class: className = '' } = Astro.props
 
-const label = title.toUpperCase()
+const label = title?.toUpperCase()
 ---
 
 <section class={twMerge('flex flex-col gap-2', className)}>

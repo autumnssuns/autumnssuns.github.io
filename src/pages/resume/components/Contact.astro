@@ -7,7 +7,7 @@ const isLink = type === 'email' || type === 'link'
 
 <div class='flex items-center'>
 	<div class='relative bg-white p-1'>
-		<Icon name={icon} size={16} />
+		<Icon name={icon || 'mdi:question-mark'} size={16} />
 	</div>
 	<div class='text-purple-900'>
 		{

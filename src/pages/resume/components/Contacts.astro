@@ -12,5 +12,5 @@ const { contacts, class: className } = Astro.props as {
 ---
 
 <div class={className}>
-	{contacts.map((contact) => <Contact {...contact} />)}
+	{contacts?.map((contact) => <Contact {...contact} />)}
 </div>
