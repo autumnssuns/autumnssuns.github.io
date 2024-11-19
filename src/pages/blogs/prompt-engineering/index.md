@@ -1,5 +1,5 @@
 ---
-layout: "@layouts/Blogs/SeriesIndex.astro"
+layout: "@layouts/blogs/SeriesIndex.astro"
 title: Prompt Engineering
 ---
 
