@@ -1,12 +1,12 @@
 ---
 interface Props {
-  to: string;
+	to: string
 }
-const { to } = Astro.props;
+const { to } = Astro.props
 ---
 
-<div class="flex items-center justify-between w-full sm:w-auto">
-  <a href={ to } class="flex items-center">
-    <slot />
-  </a>
+<div class='flex w-full items-center justify-between no-underline hover:underline sm:w-auto'>
+	<a href={to} class='flex items-center no-underline'>
+		<slot />
+	</a>
 </div>

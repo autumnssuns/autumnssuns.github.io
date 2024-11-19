@@ -1,0 +1,30 @@
+---
+import ProseLayout from '@layouts/ProseLayout.astro'
+
+type Props = {
+	file: string
+	title?: string
+}
+
+const { file, title } = Astro.props
+const seriesName = file.split('/').at(-2) as string
+const blogs = await Astro.glob(`@blogs/*/*/index.md`).then((blogs) => {
+	return blogs.filter((b) => b.file.includes(seriesName))
+})
+---
+
+<ProseLayout title={title || seriesName}>
+	<slot />
+	<h2>In this Series</h2>
+	<ul>
+		{
+			blogs.map((blog) => (
+				<li>
+					<a href={blog.url} class='underline'>
+						{blog.frontmatter.title || blog.file.split('/').at(-2)}
+					</a>
+				</li>
+			))
+		}
+	</ul>
+</ProseLayout>

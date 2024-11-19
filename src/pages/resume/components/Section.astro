@@ -1,0 +1,19 @@
+---
+import { twMerge } from 'tailwind-merge'
+type Props = {
+	title: string
+	class?: string
+}
+const { title, class: className = '' } = Astro.props
+
+const label = title.toUpperCase()
+---
+
+<section class={twMerge('flex flex-col gap-2', className)}>
+	<div class='inline-flex w-full flex-col items-start justify-between border-b-2 border-[#52247a]'>
+		<div class='text-2xl font-bold text-[#52247a]'>
+			{label}
+		</div>
+	</div>
+	<slot />
+</section>

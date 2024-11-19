@@ -1,8 +1,12 @@
 ---
-import Navbar from "../components/share/nav/Navbar.astro"
+import NavigatableLayout from './NavigatableLayout.astro'
+
+type Props = {
+	title: string
+}
+const props = Astro.props
 ---
 
-<div class="prose prose-headings:text-turquoise-600 max-w-full prose-hr:bg-gradient-to-r prose-hr:from-white prose-hr:via-turquoise prose-hr:to-white prose-hr:h-[2px]">
-  <Navbar/>
-  <slot/>
-</div>
+<NavigatableLayout {...props}>
+	<slot />
+</NavigatableLayout>

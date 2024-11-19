@@ -1,46 +1,52 @@
 ---
-import { Icon } from 'astro-icon/components';
+import { Icon } from 'astro-icon/components'
+import ProseLayout from '@layouts/ProseLayout.astro'
 ---
 
-<div class="flex flex-row bg-gradient-to-r from-magenta-500 to-turquoise-500 p-6 text-white justify-between rounded mb-10">
-  <div class="flex flex-col gap-2">
-    <p class="text-2xl">Meet <span class="text-yellow-400 font-semibold">Dan Tran</span></p>
-    <div class="border-l-4 pl-6 font-medium">
-      <p>Software Developer</p>
-      <p>Web Developer</p>
-      <p>Educator</p>
-    </div>
-  </div>
-  <div class="flex gap-2">
-    <img class="w-[150px] h-[150px] bg-blue-300 rounded-full block border-[1rem] border-white mb-[-4rem] mt-4" src="./images/avatar.jpg" alt="Profile Picture">
-    <div class="flex flex-col gap-1">
-      <div class="icon" id="share">
-        <Icon name="mdi:share" size={24}/>
-      </div>
-      <div class="icon">
-        <a href="https://github.com/autumnssuns" target="_blank">
-          <Icon name="mdi:github" size={24}/>
-        </a>
-      </div>
-    </div>
-  </div>
+<div
+	class='mb-10 flex flex-row justify-between bg-gradient-to-r from-accent-one-500 to-accent-two-500 p-6 text-white'
+>
+	<div class='flex flex-col gap-2'>
+		<p class='text-2xl'>Meet <span class='font-semibold text-yellow-400'>Dan Tran</span></p>
+		<div class='border-l-4 pl-6 font-medium'>
+			<p>Software Developer</p>
+			<p>Web Developer</p>
+			<p>Educator</p>
+		</div>
+	</div>
+	<div class='flex gap-2'>
+		<img
+			class='mb-[-4rem] mt-4 block h-[150px] w-[150px] border-[1rem] border-white bg-blue-300'
+			src='./images/avatar.jpg'
+			alt='Profile Picture'
+		/>
+		<div class='flex flex-col gap-1'>
+			<div class='icon' id='share'>
+				<Icon name='mdi:share' size={24} />
+			</div>
+			<div class='icon'>
+				<a href='https://github.com/autumnssuns' target='_blank'>
+					<Icon name='mdi:github' size={24} />
+				</a>
+			</div>
+		</div>
+	</div>
 </div>
 
 <style>
-  .icon {
-    @apply bg-white text-blue-950 rounded hover:bg-blue-400 hover:text-white hover:cursor-pointer;
-  }
-
+	.icon {
+		@apply bg-white text-blue-950 hover:cursor-pointer hover:bg-blue-400 hover:text-white;
+	}
 </style>
 
 <script>
-  const share = document.getElementById('share');
-  // Open modal dialog
-  if (share) {
-    share.addEventListener('click', () => {
-      const dialog = document.getElementById('modal') as HTMLDialogElement;
-      // Add "open" property to dialog element
-      dialog.showModal();
-    });
-  }
+	const share = document.getElementById('share')
+	// Open modal dialog
+	if (share) {
+		share.addEventListener('click', () => {
+			const dialog = document.getElementById('modal') as HTMLDialogElement
+			// Add "open" property to dialog element
+			dialog.showModal()
+		})
+	}
 </script>

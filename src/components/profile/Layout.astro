@@ -1,0 +1,14 @@
+---
+import Navbar from '../share/nav/Navbar.astro'
+---
+
+<div
+	class='prose max-w-full prose-headings:text-accent-one prose-hr:h-[2px] prose-hr:bg-gradient-to-r prose-hr:from-white prose-hr:via-accent-two prose-hr:to-white'
+>
+	<div class='flex w-full justify-end'>
+		<Navbar />
+	</div>
+	<div class='px-8'>
+		<slot />
+	</div>
+</div>

@@ -1,0 +1,24 @@
+---
+import { Icon } from 'astro-icon/components'
+
+const { type, label, value, icon } = Astro.props
+const isLink = type === 'email' || type === 'link'
+---
+
+<div class='flex items-center'>
+	<div class='relative bg-white p-1'>
+		<Icon name={icon} size={16} />
+	</div>
+	<div class='text-purple-900'>
+		{
+			isLink ? (
+				<a href={value} class='underline'>
+					{label}
+				</a>
+			) : (
+				<p>{label}</p>
+			)
+		}
+		<slot />
+	</div>
+</div>

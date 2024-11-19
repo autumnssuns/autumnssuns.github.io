@@ -1,0 +1,24 @@
+---
+import Section from '../components/Section.astro'
+type Props = {
+	title?: string
+	skills: {
+		type: string
+		skills: string[]
+	}[]
+}
+const { title = 'Skills', skills } = Astro.props
+---
+
+<Section title={title} class='items-center'>
+	<div class='grid w-4/5 grid-cols-[1fr_4fr] gap-1'>
+		{
+			skills.map(({ type, skills }) => (
+				<>
+					<div class='pr-2 text-right font-bold'>{type}</div>
+					<div>{skills.join(', ')}</div>
+				</>
+			))
+		}
+	</div>
+</Section>

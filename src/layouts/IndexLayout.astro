@@ -1,0 +1,33 @@
+---
+import NavigatableLayout from './NavigatableLayout.astro'
+
+type Props = {
+	file: string
+	title?: string
+}
+
+const { file, title = 'Index' } = Astro.props
+const parentDirName = file.split('/').at(-2) as string
+const isValidChildPath = (path: string) => {
+	// path/to/parent/child/index.md
+	return path.split('/').at(-3) === parentDirName
+}
+const files = await Astro.glob(`src/**/index.md`).then((path) => {
+	return path.filter((p) => isValidChildPath(p.file))
+})
+---
+
+<NavigatableLayout title={title}>
+	<slot />
+	<ul>
+		{
+			files.map((blog) => (
+				<li>
+					<a href={blog.url} class='underline'>
+						{blog.frontmatter.title || blog.file.split('/').at(-2)}
+					</a>
+				</li>
+			))
+		}
+	</ul>
+</NavigatableLayout>

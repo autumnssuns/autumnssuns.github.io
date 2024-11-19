@@ -1,0 +1,16 @@
+---
+import Contact from './Contact.astro'
+
+const { contacts, class: className } = Astro.props as {
+	contacts: Array<{
+		name: string
+		url: string
+		icon: string
+	}>
+	class: string
+}
+---
+
+<div class={className}>
+	{contacts.map((contact) => <Contact {...contact} />)}
+</div>

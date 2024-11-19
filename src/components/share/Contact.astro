@@ -1,21 +1,23 @@
 ---
 interface Props {
-  icon: string;
-  title: string;
+	icon: string
+	title: string
 }
 
-const { icon, title } = Astro.props;
-import { Icon } from 'astro-icon/components';
+const { icon, title } = Astro.props
+import { Icon } from 'astro-icon/components'
 ---
 
-<div class="flex items-center">
-  <div class="shadow-sm relative before:absolute before:-z-9 before:bg-gradient-to-br before:from-turquoise-200 before:to-white-50 before:h-full before:w-full before:blur-[2px] mr-4">
-    <div class="bg-white p-1 relative">
-      <Icon name={ icon } size={24}/>
-    </div>
-  </div>
-  <div class="text-sm">
-    <p class="text-xs font-semibold text-turquoise-600">{ title.toUpperCase() }</p>
-    <slot />
-  </div>
+<div class='flex items-center'>
+	<div
+		class='before:-z-9 before:to-white-50 relative mr-4 rounded shadow-sm before:absolute before:h-full before:w-full before:bg-gradient-to-br before:from-accent-two-200 before:blur-sm'
+	>
+		<div class='relative bg-white p-1'>
+			<Icon name={icon} size={24} />
+		</div>
+	</div>
+	<div class='text-sm'>
+		<p class='text-xs font-semibold text-accent-two-600'>{title.toUpperCase()}</p>
+		<slot />
+	</div>
 </div>

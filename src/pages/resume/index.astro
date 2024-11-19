@@ -1,0 +1,124 @@
+---
+import Navbar from 'src/components/share/nav/Navbar.astro'
+import Contacts from './components/Contacts.astro'
+import Section from './components/Section.astro'
+import SkillsList from './sections/SkillsList.astro'
+import PlainLayout from '@layouts/PlainLayout.astro'
+
+const name = 'Dan Tran'
+const title = 'Full Stack Web Developer'
+const contacts = [
+	{
+		type: 'email',
+		label: 'dan.k.tran@gmail.com',
+		value: 'mailto:dan.k.tran@gmail.com',
+		icon: 'mdi:email'
+	},
+	{
+		type: 'link',
+		label: 'autumnssuns',
+		value: 'https://github.com/autumnssuns',
+		icon: 'mdi:github'
+	},
+	{
+		type: 'link',
+		label: 'dan.k.tran',
+		value: 'https://www.linkedin.com/in/dan-k-tran',
+		icon: 'mdi:linkedin'
+	}
+]
+const description = `High achieving graduate with a proven track record of developing digital systems to enhance staff and student experiences. I am seeking a position to leverage my experience in the Learning and Teaching space. With 3 years of experience managing, designing, developing, testing, and deploying a website for a prominent student support service, I am well-versed in full-stack web application development. My communication, creativity, and problem-solving skills were honed during 2.5 years of teaching and creating learning materials across 10 different units within QUT's Faculty of Science and QUT College. Detail-oriented and committed to excellence, I am eager to contribute my knowledge to deliver innovative solutions.`
+const technicalSkills = [
+	{
+		type: 'Languages',
+		skills: ['JavaScript', 'TypeScript', 'HTML', 'CSS', 'C#', 'Java', 'Python', 'SQL']
+	},
+	{
+		type: 'Frameworks',
+		skills: [
+			'React',
+			'Node.js',
+			'Express',
+			'Tailwind CSS',
+			'ASP.NET MVC',
+			'Entity Framework',
+			'Svelte'
+		]
+	},
+	{
+		type: 'Tools',
+		skills: ['Git', 'GitHub', 'Docker', 'AWS', 'MS Teams', 'Canvas LMS']
+	},
+	{
+		type: 'Other',
+		skills: [
+			'Object-Oriented Design',
+			'RESTful APIs',
+			'Web Computing',
+			'Agile Methodologies',
+			'Test-Driven Development',
+			'CI/CD'
+		]
+	}
+]
+const softSkills = [
+	{
+		type: 'Communication',
+		skills: ['Teamwork', 'Stakeholder Engagement', 'Teaching', 'Technical Writing', 'Presentation']
+	},
+	{
+		type: 'Organisation',
+		skills: ['Critical and Systematic Thinking', 'Resources Management', 'Workflow Planning']
+	}
+]
+---
+
+<PlainLayout title='Resume - Dan Tran'>
+	<div class='flex w-full justify-end font-medium'>
+		<Navbar />
+	</div>
+
+	<main class='flex flex-col gap-4'>
+		<div class='flex justify-between'>
+			<div class='title-group'>
+				<h1 class='text-6xl font-semibold'>{name}</h1>
+				<h2 class='text-xl font-bold'>{title}</h2>
+			</div>
+			<Contacts contacts={contacts} class='grid grid-cols-2 gap-2' />
+		</div>
+		<p>{description}</p>
+		<SkillsList title='Technical skills' skills={technicalSkills} />
+		<SkillsList title='Soft skills' skills={softSkills} />
+		<Section title='Education' />
+		<Section title='Professional Experience' />
+		<Section title='Academic Projects' />
+		<Section title='Awards' />
+		<Section title='Referees'>
+			<p>Provided upon request</p>
+		</Section>
+	</main>
+</PlainLayout>
+
+<style>
+	:root {
+		--color-primary: #52247a;
+		line-height: 2;
+	}
+
+	html {
+		@apply flex h-full justify-center;
+	}
+
+	body {
+		@apply flex w-full flex-col items-center;
+	}
+
+	main {
+		@apply w-full max-w-screen-lg p-8 shadow-lg;
+	}
+
+	h1,
+	h2 {
+		color: var(--color-primary);
+	}
+</style>
