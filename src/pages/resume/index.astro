@@ -4,31 +4,37 @@ import Contacts from './components/Contacts.astro'
 import Section from './components/Section.astro'
 import SkillsList from './sections/SkillsList.astro'
 import PlainLayout from '@layouts/PlainLayout.astro'
+import type { About, EducationList, SkillList, WorkList } from './types'
+import Education from './sections/Education.astro'
+import WorkExperience from './sections/WorkExperience.astro'
 
-const name = 'Dan Tran'
-const title = 'Full Stack Web Developer'
-const contacts = [
-	{
-		type: 'email',
-		label: 'dan.k.tran@gmail.com',
-		value: 'mailto:dan.k.tran@gmail.com',
-		icon: 'mdi:email'
-	},
-	{
-		type: 'link',
-		label: 'autumnssuns',
-		value: 'https://github.com/autumnssuns',
-		icon: 'mdi:github'
-	},
-	{
-		type: 'link',
-		label: 'dan.k.tran',
-		value: 'https://www.linkedin.com/in/dan-k-tran',
-		icon: 'mdi:linkedin'
-	}
-]
-const description = `High achieving graduate with a proven track record of developing digital systems to enhance staff and student experiences. I am seeking a position to leverage my experience in the Learning and Teaching space. With 3 years of experience managing, designing, developing, testing, and deploying a website for a prominent student support service, I am well-versed in full-stack web application development. My communication, creativity, and problem-solving skills were honed during 2.5 years of teaching and creating learning materials across 10 different units within QUT's Faculty of Science and QUT College. Detail-oriented and committed to excellence, I am eager to contribute my knowledge to deliver innovative solutions.`
-const technicalSkills = [
+const about: About = {
+	name: 'Dan Tran',
+	title: 'Full Stack Web Developer',
+	contacts: [
+		{
+			type: 'email',
+			label: 'dan.k.tran@gmail.com',
+			value: 'mailto:dan.k.tran@gmail.com',
+			icon: 'mdi:email'
+		},
+		{
+			type: 'link',
+			label: 'autumnssuns',
+			value: 'https://github.com/autumnssuns',
+			icon: 'mdi:github'
+		},
+		{
+			type: 'link',
+			label: 'dan.k.tran',
+			value: 'https://www.linkedin.com/in/dan-k-tran',
+			icon: 'mdi:linkedin'
+		}
+	],
+	description: `High achieving graduate with a proven track record of developing digital systems to enhance staff and student experiences. I am seeking a position to leverage my experience in the Learning and Teaching space. With 3 years of experience managing, designing, developing, testing, and deploying a website for a prominent student support service, I am well-versed in full-stack web application development. My communication, creativity, and problem-solving skills were honed during 2.5 years of teaching and creating learning materials across 10 different units within QUT's Faculty of Science and QUT College. Detail-oriented and committed to excellence, I am eager to contribute my knowledge to deliver innovative solutions.`
+}
+
+const technicalSkills: SkillList = [
 	{
 		type: 'Languages',
 		skills: ['JavaScript', 'TypeScript', 'HTML', 'CSS', 'C#', 'Java', 'Python', 'SQL']
@@ -61,7 +67,8 @@ const technicalSkills = [
 		]
 	}
 ]
-const softSkills = [
+
+const softSkills: SkillList = [
 	{
 		type: 'Communication',
 		skills: ['Teamwork', 'Stakeholder Engagement', 'Teaching', 'Technical Writing', 'Presentation']
@@ -71,6 +78,78 @@ const softSkills = [
 		skills: ['Critical and Systematic Thinking', 'Resources Management', 'Workflow Planning']
 	}
 ]
+
+const education: EducationList = [
+	{
+		title:
+			'Bachelor of Information Technology (Computer Science)\nBachelor of Mathematics (Applied & Computational Mathematics)',
+		provider: 'Queensland University of Technology',
+		duration: 'Feb 2019 - Dec 2023',
+		details: [
+			'GPA 7.0 on a 7-point scale',
+			'Relevant coursework: Software Development (90%), Web Computing (100%), Cloud Computing (100%)'
+		]
+	}
+]
+
+const work: WorkList = [
+	{
+		title: 'Full Stack Web Developer',
+		company: 'STiMulate, Student Success Group | Queensland University of Technology',
+		summary:
+			'Full-stack development for Volunteer Rostering System serving thousands of staff and students annually',
+		duration: 'Aug 2021 - Jun 2024',
+		details: [
+			'Develop an MVC web application with Microsoft ASP.NET, Entity Framework and an MS SQL Server',
+			'Execute the complete life-cycle of feature development: identifying demand, research, feasibility evaluation, implementation, testing, delivery, maintenance and operation',
+			'Collaborate with DBS to migrate data and deploy a new server',
+			'Utilise Git with GitHub for version control',
+			'Reform project management with GitHub Issues, Projects and documentation with DocFX',
+			'Engage with stakeholders to analyse requirements in alignment with business goals and strategic directions'
+		]
+	},
+	{
+		title: 'Software Developer',
+		company: 'Queensland University of Technology',
+		summary:
+			'Sole developer of a NodeJS application empowering the authoring of online learning materials at scale',
+		duration: 'Feb 2024 - Jun 2024',
+		details: [
+			'Communicate with team of 5 and growing to steer the project and resolve issues',
+			'Design a customisable markdown processor integrating with Canvas API for ease of content authoring',
+			'Apply said application to deploy innovative Canvas pages in the Faculty of Science and QUT College, facilitating a successful demonstration in L&T Colloquium to attract 6 early adopters',
+			'Collaborate with DBS’ representative to explore and respond to changes in the Canvas LMS',
+			'Exercise project management acumen through prioritisation and task delegation with GitHub Projects',
+			'Leading the documentation, testing, deployment and continuous integration of the software'
+		]
+	},
+	{
+		title: 'Casual Academic',
+		company: 'Faculty of Science; QUT College | Queensland University of Technology',
+		summary: 'Teaching and engaging 200+ students per semester from 10 units historically',
+		duration: 'Mar 2022 - Jun 2024',
+		details: [
+			'Tutor in various IT and Engineering units',
+			'Teach several programming languages: Python, C#, Java, JavaScript and their important frameworks',
+			'Impart a multitude of important software development concepts: OOP, Agile and Iterative Development, Source Control with Git, Test Driven Development and CI/CD',
+			'Facilitate effective communication to foster understanding and a safe environment for students',
+			'Provide intensive programming support for students in completing their own projects',
+			'Achieve 91% satisfaction with teaching approach in Student Voice Survey'
+		]
+	},
+	{
+		title: 'Unit Development Assistant',
+		company: 'Faculty of Science | Queensland University of Technology',
+		duration: 'Mar 2023 - Jun 2024',
+		summary:
+			'Supporting the administration of various units with technical expertise and content development',
+		details: [
+			'Develop teaching materials with 50+ Canvas pages deployed for 5 units, ensuring alignment with curriculum objectives and industry best practices',
+			'Collaborate closely with coordinators to gather insights and expectations from students, allowing the creation of engaging and relevant training materials',
+			'Configure a container- and cloud-based automatic marking system serving 1000+ students per semester'
+		]
+	}
+]
 ---
 
 <PlainLayout title='Resume - Dan Tran'>
@@ -78,21 +157,22 @@ const softSkills = [
 		<Navbar />
 	</div>
 
-	<main class='flex flex-col gap-4'>
+	<main class='flex flex-col gap-4 leading-relaxed'>
 		<div class='flex justify-between'>
 			<div class='title-group'>
-				<h1 class='text-6xl font-semibold'>{name}</h1>
-				<h2 class='text-xl font-bold'>{title}</h2>
+				<h1 class='text-6xl font-semibold'>{about.name}</h1>
+				<h2 class='text-xl font-bold'>{about.title}</h2>
 			</div>
-			<Contacts contacts={contacts} class='grid grid-cols-2 gap-2' />
+			<Contacts contacts={about.contacts} class='grid grid-cols-2 gap-2' />
 		</div>
-		<p>{description}</p>
+		<p>{about.description}</p>
 		<SkillsList title='Technical skills' skills={technicalSkills} />
 		<SkillsList title='Soft skills' skills={softSkills} />
-		<Section title='Education' />
-		<Section title='Professional Experience' />
-		<Section title='Academic Projects' />
-		<Section title='Awards' />
+		<Education title='Education' degrees={education} />
+		<!-- <Section title='Professional Experience' /> -->
+		<WorkExperience title='Professional Experience' experience={work} />
+		<!-- <Section title='Academic Projects' /> -->
+		<!-- <Section title='Awards' /> -->
 		<Section title='Referees'>
 			<p>Provided upon request</p>
 		</Section>

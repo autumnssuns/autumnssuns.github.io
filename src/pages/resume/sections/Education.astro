@@ -1,0 +1,30 @@
+---
+import Section from '../components/Section.astro'
+import type { EducationList, SkillList } from '../types'
+type Props = {
+	title?: string
+	degrees: EducationList
+}
+const { title = 'Skills', degrees } = Astro.props
+---
+
+<Section title={title} class='w-full items-center'>
+	{
+		degrees.map((degree) => (
+			<div class='w-full'>
+				<div class='grid grid-cols-[4fr_1fr] gap-2'>
+					<div class='whitespace-pre font-bold'>{degree.title}</div>
+					<div>{degree.duration}</div>
+				</div>
+				<div>
+					<div>{degree.provider}</div>
+					<ul class='list-disc pl-8'>
+						{degree.details.map((detail) => (
+							<li>{detail}</li>
+						))}
+					</ul>
+				</div>
+			</div>
+		))
+	}
+</Section>

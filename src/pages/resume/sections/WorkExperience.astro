@@ -1,0 +1,31 @@
+---
+import Section from '../components/Section.astro'
+import type { WorkList } from '../types'
+type Props = {
+	title?: string
+	experience: WorkList
+}
+const { title = 'Skills', experience } = Astro.props
+---
+
+<Section title={title} class='w-full items-center'>
+	{
+		experience.map((job) => (
+			<div class='w-full'>
+				<div class='grid grid-cols-[4fr_1fr] gap-2'>
+					<div class='whitespace-pre text-lg font-bold'>{job.title}</div>
+					<div>{job.duration}</div>
+				</div>
+				<div>
+					<div>{job.company}</div>
+					<div class='font-bold italic text-[#7D2884]'>{job.summary}</div>
+					<ul class='list-disc pl-8'>
+						{job.details.map((detail) => (
+							<li>{detail}</li>
+						))}
+					</ul>
+				</div>
+			</div>
+		))
+	}
+</Section>
