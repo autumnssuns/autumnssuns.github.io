@@ -3,7 +3,8 @@ import Navbar from 'src/components/share/nav/Navbar.astro'
 import Contacts from './components/Contacts.astro'
 import Section from './components/Section.astro'
 import SkillsList from './sections/SkillsList.astro'
-import PlainLayout from '@layouts/PlainLayout.astro'
+// import PlainLayout from '@layouts/PlainLayout.astro'
+import NavigatableLayout from 'src/layouts/NavigatableLayout.astro'
 import type { About, EducationList, SkillList, WorkList } from './types'
 import Education from './sections/Education.astro'
 import WorkExperience from './sections/WorkExperience.astro'
@@ -152,16 +153,12 @@ const work: WorkList = [
 ]
 ---
 
-<PlainLayout title='Resume - Dan Tran'>
-	<div class='flex w-full justify-end font-medium'>
-		<Navbar />
-	</div>
-
+<NavigatableLayout title='Resume - Dan Tran' class='prose-p:m-0 prose-ul:m-0 prose-li:m-0'>
 	<main class='flex flex-col gap-4 leading-relaxed'>
 		<div class='flex flex-col justify-between md:flex-row'>
 			<div class='title-group text-center md:text-left'>
-				<h1 class='text-6xl font-semibold'>{about.name}</h1>
-				<h2 class='text-xl font-bold'>{about.title}</h2>
+				<h1 class='m-0 text-6xl font-semibold'>{about.name}</h1>
+				<h2 class='m-0 text-xl font-bold'>{about.title}</h2>
 			</div>
 			<Contacts
 				contacts={about.contacts}
@@ -180,7 +177,7 @@ const work: WorkList = [
 			<p>Provided upon request</p>
 		</Section>
 	</main>
-</PlainLayout>
+</NavigatableLayout>
 
 <style>
 	:root {
@@ -197,7 +194,7 @@ const work: WorkList = [
 	}
 
 	main {
-		@apply w-full max-w-screen-lg p-8 shadow-lg;
+		@apply w-full max-w-screen-lg md:p-8 md:shadow-lg;
 	}
 
 	h1,
