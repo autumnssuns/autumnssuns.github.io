@@ -158,12 +158,15 @@ const work: WorkList = [
 	</div>
 
 	<main class='flex flex-col gap-4 leading-relaxed'>
-		<div class='flex justify-between'>
-			<div class='title-group'>
+		<div class='flex flex-col justify-between md:flex-row'>
+			<div class='title-group text-center md:text-left'>
 				<h1 class='text-6xl font-semibold'>{about.name}</h1>
 				<h2 class='text-xl font-bold'>{about.title}</h2>
 			</div>
-			<Contacts contacts={about.contacts} class='grid grid-cols-2 gap-2' />
+			<Contacts
+				contacts={about.contacts}
+				class='flex flex-wrap justify-center gap-2 md:grid md:grid-cols-2'
+			/>
 		</div>
 		<p>{about.description}</p>
 		<SkillsList title='Technical skills' skills={technicalSkills} />

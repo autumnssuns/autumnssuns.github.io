@@ -7,7 +7,7 @@ import Contact from '../share/Contact.astro'
 	class='relative h-fit rounded bg-white before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:bg-gradient-to-r before:from-accent-one-500 before:to-accent-two-500 before:blur-sm lg:sticky lg:top-12'
 >
 	<div
-		class='relative flex h-full w-full flex-row items-center justify-between gap-5 rounded bg-white p-10 text-black lg:flex-col'
+		class='relative flex h-full w-full flex-col items-center justify-between gap-5 rounded bg-white p-10 text-black md:flex-row lg:flex-col'
 	>
 		<div class='flex flex-col items-center gap-2'>
 			<img
@@ -24,17 +24,14 @@ import Contact from '../share/Contact.astro'
 			</div>
 		</div>
 		<div class='flex flex-col gap-2'>
-			<p class='text-4xl font-semibold text-black'>Dan Tran</p>
-			<div class='flex flex-col gap-2 lg:items-center'>
+			<p class='text-center text-4xl font-semibold text-black'>Dan Tran</p>
+			<div class='flex flex-row gap-2 md:flex-col lg:items-center'>
 				<p class='role'>Software Developer</p>
 				<p class='role'>Web Developer</p>
 			</div>
 		</div>
-		<div
-			class='h-full w-[2px] bg-gradient-to-r from-white via-accent-two to-white lg:h-[2px] lg:w-full'
-		>
-		</div>
-		<div class='hidden flex-col gap-4 sm:flex'>
+		<div class='h-[2px] w-full bg-gradient-to-r from-white via-accent-two to-white'></div>
+		<div class='flex flex-col gap-4'>
 			<!-- Contacts -->
 			<Contact title='Email' icon='mdi:email'>
 				<a href='mailto:dan.k.tran.w@gmail.com'> dan.k.tran.w@gmail.com </a>

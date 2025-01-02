@@ -11,11 +11,11 @@ const props = Astro.props
 ---
 
 <PlainLayout
-	class='prose max-w-full p-1 md:p-2 lg:p-4 prose-headings:text-accent-one prose-hr:h-[2px] prose-hr:bg-gradient-to-r prose-hr:from-white prose-hr:via-accent-one prose-hr:to-white'
+	class='prose max-w-full p-1 prose-headings:text-accent-one prose-hr:h-[2px] prose-hr:bg-gradient-to-r prose-hr:from-white prose-hr:via-accent-one prose-hr:to-white md:p-2 lg:p-4'
 	{...props}
 >
-	<div class='flex w-full items-center justify-between'>
-		<Breadcrumbs class='content-center'>
+	<div class='flex w-full flex-col-reverse justify-between md:flex-row md:items-center'>
+		<Breadcrumbs class='md:content-center'>
 			<svg
 				slot='separator'
 				xmlns='http://www.w3.org/2000/svg'
