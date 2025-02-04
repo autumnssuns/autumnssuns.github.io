@@ -10,7 +10,7 @@ const { title = 'Skills', experience } = Astro.props
 
 <Section title={title} class='w-full items-center'>
 	{
-		experience.map((job) => (
+		experience?.map((job) => (
 			<div class='w-full'>
 				<div class='flex flex-col-reverse gap-2 md:grid md:grid-cols-[4fr_1fr]'>
 					<div class='whitespace-pre-wrap font-bold'>{job.title}</div>
@@ -20,7 +20,7 @@ const { title = 'Skills', experience } = Astro.props
 					<div>{job.company}</div>
 					<div class='font-bold italic text-[#7D2884]'>{job.summary}</div>
 					<ul class='list-disc pl-8'>
-						{job.details.map((detail) => (
+						{job.details?.map((detail) => (
 							<li>{detail}</li>
 						))}
 					</ul>
