@@ -1,0 +1,7 @@
+{
+  "editor.wordWrap": "on",
+  "markdown.extension.syntax.plainTheme": false,
+  "markdown.extension.print.theme": "light",
+  "markdown-preview-github-styles.lightTheme": "dark",
+  "markdown.styles": [".vscode/markdown-preview.css"]
+}

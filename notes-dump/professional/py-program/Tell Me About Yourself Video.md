@@ -376,3 +376,583 @@ Finally, let's move on to Segment 6.
 
 > - Thank the audience for watching.
 > - Contact details include LinkedIn profile and UQ profile.
+
+Certainly! Here's the continuation and completion of Segment 6:
+
+---
+
+**Segment 6: Conclusion and Contact Details**
+
+"Thank you for watching my video. If you'd like to connect or learn more about my work, please visit my LinkedIn profile or my ADMS profile. I look forward to the opportunity to contribute to the team at QUT."
+
+---
+
+Does this capture everything you want to convey? If there's anything you'd like to add or adjust, let me know!
+
+> Compose the whole script
+
+Sure! Here's the complete script for your "Tell Me About Yourself" video:
+
+---
+
+**Segment 1: Introduction**
+
+"Hi, my name is Dan Tran. I am currently a Research Software Developer at the University of Queensland. I hold a Bachelor's degree in Information Technology and Mathematics from Queensland University of Technology."
+
+---
+
+**Segment 2: Overview of Current Role and Responsibilities**
+
+"In my current role as a Research Software Developer at the ARC Centre of Excellence for Automated Decision-Making and Society (ADM+S) at the University of Queensland, I design, develop, test, and maintain software applications for various research projects. I collaborate closely with researchers and academics to implement software solutions that support data analysis and decision-making processes. These responsibilities align well with the job I'm applying for at QUT, as they involve software development, collaboration with academic teams, and a focus on research-driven projects."
+
+---
+
+**Segment 3: Experience Alignment with Job Application**
+
+"I have been involved in all stages of software development, from requirements gathering to deployment and CI/CD processes, which aligns with the job requirements at QUT. I am proficient in modern web development technologies, especially TypeScript, React, and Svelte, which are essential for the role I'm applying for and have been integral to my current projects. Additionally, I have collaborated with cross-functional teams to deliver software solutions and effectively communicate technical concepts to non-technical stakeholders."
+
+---
+
+**Segment 4: Skills and Competencies (Using STAR Method)**
+
+"I'd like to highlight my skills in rapid prototyping, user interface design, and problem-solving. A specific project that showcases these skills is the Ad Observatory project at ADMS. 
+
+**Situation**: In September 2024, the Ad Observatory project had a pilot field study where participants used a mobile app to collect data on Alcohol and Gambling advertising.
+
+**Task**: I was responsible for monitoring and extracting data from the app to generate reports for the research team.
+
+**Action**: Within two days, I developed a Python script to automate the data extraction from the app's AWS S3 bucket and transform it into a web-based report with visualizations.
+
+**Result**: The dashboard I created enabled the research team to access real-time data insights and conduct co-analysis sessions with participants. This led to valuable research outcomes, including a published report in the Foundation for Alcohol Research & Education, and features on ABC News and The Guardian. My dashboard was well-received by the team, and I was given the lead role in developing the web interface for the next phase of the project."
+
+---
+
+**Segment 5: Passion for Technology and Innovation**
+
+"My passion for technology stems from a desire to create meaningful solutions that have a positive impact on society. I believe I can contribute to the role, team, and company at QUT by bringing fresh perspectives, innovative ideas, and a collaborative spirit to the projects and initiatives we undertake."
+
+---
+
+**Segment 6: Conclusion and Contact Details**
+
+"Thank you for watching my video. If you'd like to connect or learn more about my work, please visit my LinkedIn profile or my ADMS profile. I look forward to the opportunity to contribute to the team at QUT."
+
+---
+
+Does this script capture everything you want to convey? If there's anything you'd like to add or adjust, let me know!
+
+> Add the scenes setting to each segment (time, location, camera angle, style)
+
+Sure! Here's the complete script with scene settings for each segment:
+
+---
+
+**Segment 1: Introduction**
+
+**Script**: "Hi, my name is Dan Tran. I am currently a Research Software Developer at the University of Queensland. I hold a Bachelor's degree in Information Technology and Mathematics from Queensland University of Technology."
+
+**Scene Setting**:
+- **Time**: Morning
+- **Location**: In front of the University of Queensland entrance with the university logo in the background.
+- **Camera Angle**: Medium shot, slightly off-center to include the logo.
+- **Style**: Mixed style, outdoor far shot.
+
+---
+
+**Segment 2: Overview of Current Role and Responsibilities**
+
+**Script**: "In my current role as a Research Software Developer at the ARC Centre of Excellence for Automated Decision-Making and Society (ADM+S) at the University of Queensland, I design, develop, test, and maintain software applications for various research projects. I collaborate closely with researchers and academics to implement software solutions that support data analysis and decision-making processes. These responsibilities align well with the job I'm applying for at QUT, as they involve software development, collaboration with academic teams, and a focus on research-driven projects."
+
+**Scene Setting**:
+- **Time**: Mid-morning
+- **Location**: In front of the ADM+S office at UQ with a banner showing the organization name.
+- **Camera Angle**: Medium shot, including the office banner in the background.
+- **Style**: Mixed style, office environment.
+
+---
+
+**Segment 3: Experience Alignment with Job Application**
+
+**Script**: "I have been involved in all stages of software development, from requirements gathering to deployment and CI/CD processes, which aligns with the job requirements at QUT. I am proficient in modern web development technologies, especially TypeScript, React, and Svelte, which are essential for the role I'm applying for and have been integral to my current projects. Additionally, I have collaborated with cross-functional teams to deliver software solutions and effectively communicate technical concepts to non-technical stakeholders."
+
+**Scene Setting**:
+- **Time**: Late morning
+- **Location**: In front of Queensland University of Technology (QUT) to show experience working in collaboration with different universities.
+- **Camera Angle**: Medium shot, including the QUT building in the background.
+- **Style**: Mixed style, outdoor far shot.
+
+---
+
+**Segment 4: Skills and Competencies (Using STAR Method)**
+
+**Script**: "I'd like to highlight my skills in rapid prototyping, user interface design, and problem-solving. A specific project that showcases these skills is the Ad Observatory project at ADMS. 
+
+**Situation**: In September 2024, the Ad Observatory project had a pilot field study where participants used a mobile app to collect data on Alcohol and Gambling advertising.
+
+**Task**: I was responsible for monitoring and extracting data from the app to generate reports for the research team.
+
+**Action**: Within two days, I developed a Python script to automate the data extraction from the app's AWS S3 bucket and transform it into a web-based report with visualizations.
+
+**Result**: The dashboard I created enabled the research team to access real-time data insights and conduct co-analysis sessions with participants. This led to valuable research outcomes, including a published report in the Foundation for Alcohol Research & Education, and features on ABC News and The Guardian. My dashboard was well-received by the team, and I was given the lead role in developing the web interface for the next phase of the project."
+
+**Scene Setting**:
+- **Time**: Early afternoon
+- **Location**: Computational Lab at QUT, showing the work setup and computer screen with code snippets.
+- **Camera Angle**: Medium shot, transitioning to a close-up of the computer screen.
+- **Style**: Mixed style, desk view.
+
+---
+
+**Segment 5: Passion for Technology and Innovation**
+
+**Script**: "My passion for technology stems from a desire to create meaningful solutions that have a positive impact on society. I believe I can contribute to the role, team, and company at QUT by bringing fresh perspectives, innovative ideas, and a collaborative spirit to the projects and initiatives we undertake."
+
+**Scene Setting**:
+- **Time**: Late afternoon
+- **Location**: In front of the main building of UQ to signify passion for research.
+- **Camera Angle**: Medium shot, including the building in the background.
+- **Style**: Mixed style, outdoor far shot.
+
+---
+
+**Segment 6: Conclusion and Contact Details**
+
+**Script**: "Thank you for watching my video. If you'd like to connect or learn more about my work, please visit my LinkedIn profile or my ADMS profile. I look forward to the opportunity to contribute to the team at QUT."
+
+**Scene Setting**:
+- **Time**: Late afternoon
+- **Location**: In front of the main building of UQ.
+- **Camera Angle**: Medium shot, similar to Segment 5.
+- **Style**: Mixed style, outdoor far shot.
+
+---
+
+Does this capture everything you want to convey? If there's anything you'd like to add or adjust, let me know!
+
+> I will only be at UQ on Thursday, and QUT on Wednesday. Help me group the segments by location and time. Also add suggestions for transitions so I can record the video accordingly.
+
+Sure, let's group the segments by location and time, and add suggestions for transitions.
+
+### Wednesday (QUT)
+
+**Segment 3: Experience Alignment with Job Application**
+- **Time**: Late morning
+- **Location**: In front of Queensland University of Technology (QUT)
+- **Camera Angle**: Medium shot, including the QUT building in the background
+- **Style**: Mixed style, outdoor far shot
+- **Transition**: Start with a wide shot of the QUT building, then zoom in to a medium shot of you speaking.
+
+**Segment 4: Skills and Competencies (Using STAR Method)**
+- **Time**: Early afternoon
+- **Location**: Computational Lab at QUT, showing the work setup and computer screen with code snippets
+- **Camera Angle**: Medium shot, transitioning to a close-up of the computer screen
+- **Style**: Mixed style, desk view
+- **Transition**: Show a brief clip of you walking into the Computational Lab, then cut to you sitting at your desk.
+
+### Thursday (UQ)
+
+**Segment 1: Introduction**
+- **Time**: Morning
+- **Location**: In front of the University of Queensland entrance with the university logo in the background
+- **Camera Angle**: Medium shot, slightly off-center to include the logo
+- **Style**: Mixed style, outdoor far shot
+- **Transition**: Start with a wide shot of the UQ entrance, then zoom in to a medium shot of you speaking.
+
+**Segment 2: Overview of Current Role and Responsibilities**
+- **Time**: Mid-morning
+- **Location**: In front of the ADM+S office at UQ with a banner showing the organization name
+- **Camera Angle**: Medium shot, including the office banner in the background
+- **Style**: Mixed style, office environment
+- **Transition**: Show a brief clip of you walking towards the ADM+S office, then cut to you standing in front of the banner.
+
+**Segment 5: Passion for Technology and Innovation**
+- **Time**: Late afternoon
+- **Location**: In front of the main building of UQ to signify passion for research
+- **Camera Angle**: Medium shot, including the building in the background
+- **Style**: Mixed style, outdoor far shot
+- **Transition**: Start with a wide shot of the main building, then zoom in to a medium shot of you speaking.
+
+**Segment 6: Conclusion and Contact Details**
+- **Time**: Late afternoon
+- **Location**: In front of the main building of UQ
+- **Camera Angle**: Medium shot, similar to Segment 5
+- **Style**: Mixed style, outdoor far shot
+- **Transition**: Continue from Segment 5 without a cut, maintaining the same setting for a seamless transition.
+
+### General Transition Tips
+- **Smooth Cuts**: Use smooth cuts between scenes to maintain a professional look.
+- **B-Roll**: Include B-roll footage (e.g., walking into buildings, typing on a computer) to make transitions more engaging.
+- **Consistent Lighting**: Ensure consistent lighting across all segments to maintain visual continuity.
+- **Audio**: Use the same microphone setup for all segments to ensure consistent audio quality.
+
+Does this grouping and transition plan work for you? If there's anything you'd like to adjust, let me know!
+
+> Add the script to each segment with. Also move Segment 5 to QUT on Wednesday, as the role I'm applying for is at QUT.
+
+Got it! Here's the complete script with scene settings, grouped by location and time, and with Segment 5 moved to QUT on Wednesday:
+
+### Wednesday (QUT)
+
+**Segment 3: Experience Alignment with Job Application**
+- **Script**: "I have been involved in all stages of software development, from requirements gathering to deployment and CI/CD processes, which aligns with the job requirements at QUT. I am proficient in modern web development technologies, especially TypeScript, React, and Svelte, which are essential for the role I'm applying for and have been integral to my current projects. Additionally, I have collaborated with cross-functional teams to deliver software solutions and effectively communicate technical concepts to non-technical stakeholders."
+- **Time**: Late morning
+- **Location**: In front of Queensland University of Technology (QUT)
+- **Camera Angle**: Medium shot, including the QUT building in the background
+- **Style**: Mixed style, outdoor far shot
+- **Transition**: Start with a wide shot of the QUT building, then zoom in to a medium shot of you speaking.
+
+**Segment 4: Skills and Competencies (Using STAR Method)**
+- **Script**: "I'd like to highlight my skills in rapid prototyping, user interface design, and problem-solving. A specific project that showcases these skills is the Ad Observatory project at ADMS. 
+
+**Situation**: In September 2024, the Ad Observatory project had a pilot field study where participants used a mobile app to collect data on Alcohol and Gambling advertising.
+
+**Task**: I was responsible for monitoring and extracting data from the app to generate reports for the research team.
+
+**Action**: Within two days, I developed a Python script to automate the data extraction from the app's AWS S3 bucket and transform it into a web-based report with visualizations.
+
+**Result**: The dashboard I created enabled the research team to access real-time data insights and conduct co-analysis sessions with participants. This led to valuable research outcomes, including a published report in the Foundation for Alcohol Research & Education, and features on ABC News and The Guardian. My dashboard was well-received by the team, and I was given the lead role in developing the web interface for the next phase of the project."
+- **Time**: Early afternoon
+- **Location**: Computational Lab at QUT, showing the work setup and computer screen with code snippets
+- **Camera Angle**: Medium shot, transitioning to a close-up of the computer screen
+- **Style**: Mixed style, desk view
+- **Transition**: Show a brief clip of you walking into the Computational Lab, then cut to you sitting at your desk.
+
+**Segment 5: Passion for Technology and Innovation**
+- **Script**: "My passion for technology stems from a desire to create meaningful solutions that have a positive impact on society. I believe I can contribute to the role, team, and company at QUT by bringing fresh perspectives, innovative ideas, and a collaborative spirit to the projects and initiatives we undertake."
+- **Time**: Late afternoon
+- **Location**: In front of Queensland University of Technology (QUT)
+- **Camera Angle**: Medium shot, including the QUT building in the background
+- **Style**: Mixed style, outdoor far shot
+- **Transition**: Start with a wide shot of the QUT building, then zoom in to a medium shot of you speaking.
+
+### Thursday (UQ)
+
+**Segment 1: Introduction**
+- **Script**: "Hi, my name is Dan Tran. I am currently a Research Software Developer at the University of Queensland. I hold a Bachelor's degree in Information Technology and Mathematics from Queensland University of Technology."
+- **Time**: Morning
+- **Location**: In front of the University of Queensland entrance with the university logo in the background
+- **Camera Angle**: Medium shot, slightly off-center to include the logo
+- **Style**: Mixed style, outdoor far shot
+- **Transition**: Start with a wide shot of the UQ entrance, then zoom in to a medium shot of you speaking.
+
+**Segment 2: Overview of Current Role and Responsibilities**
+- **Script**: "In my current role as a Research Software Developer at the ARC Centre of Excellence for Automated Decision-Making and Society (ADM+S) at the University of Queensland, I design, develop, test, and maintain software applications for various research projects. I collaborate closely with researchers and academics to implement software solutions that support data analysis and decision-making processes. These responsibilities align well with the job I'm applying for at QUT, as they involve software development, collaboration with academic teams, and a focus on research-driven projects."
+- **Time**: Mid-morning
+- **Location**: In front of the ADM+S office at UQ with a banner showing the organization name
+- **Camera Angle**: Medium shot, including the office banner in the background
+- **Style**: Mixed style, office environment
+- **Transition**: Show a brief clip of you walking towards the ADM+S office, then cut to you standing in front of the banner.
+
+**Segment 6: Conclusion and Contact Details**
+- **Script**: "Thank you for watching my video. If you'd like to connect or learn more about my work, please visit my LinkedIn profile or my ADMS profile. I look forward to the opportunity to contribute to the team at QUT."
+- **Time**: Late afternoon
+- **Location**: In front of the main building of UQ
+- **Camera Angle**: Medium shot, similar to Segment 5
+- **Style**: Mixed style, outdoor far shot
+- **Transition**: Continue from Segment 5 without a cut, maintaining the same setting for a seamless transition.
+
+### General Transition Tips
+- **Smooth Cuts**: Use smooth cuts between scenes to maintain a professional look.
+- **B-Roll**: Include B-roll footage (e.g., walking into buildings, typing on a computer) to make transitions more engaging.
+- **Consistent Lighting**: Ensure consistent lighting across all segments to maintain visual continuity.
+- **Audio**: Use the same microphone setup for all segments to ensure consistent audio quality.
+
+Does this grouping and transition plan work for you? If there's anything you'd like to adjust, let me know!
+
+> Put the script in a code block, and the scene settings on a table, with two columns: Setting, Description
+
+Sure! Here's the complete script with the scene settings in a table format:
+
+### Wednesday (QUT)
+
+**Segment 3: Experience Alignment with Job Application**
+```markdown
+I have been involved in all stages of software development, from requirements gathering to deployment and CI/CD processes, which aligns with the job requirements at QUT. I am proficient in modern web development technologies, especially TypeScript, React, and Svelte, which are essential for the role I'm applying for and have been integral to my current projects. Additionally, I have collaborated with cross-functional teams to deliver software solutions and effectively communicate technical concepts to non-technical stakeholders.
+```
+
+| Setting      | Description                                                                                |
+| ------------ | ------------------------------------------------------------------------------------------ |
+| Time         | Late morning                                                                               |
+| Location     | In front of Queensland University of Technology (QUT)                                      |
+| Camera Angle | Medium shot, including the QUT building in the background                                  |
+| Style        | Mixed style, outdoor far shot                                                              |
+| Transition   | Start with a wide shot of the QUT building, then zoom in to a medium shot of you speaking. |
+
+**Segment 4: Skills and Competencies (Using STAR Method)**
+```markdown
+I'd like to highlight my skills in rapid prototyping, user interface design, and problem-solving. A specific project that showcases these skills is the Ad Observatory project at ADMS. 
+
+**Situation**: In September 2024, the Ad Observatory project had a pilot field study where participants used a mobile app to collect data on Alcohol and Gambling advertising.
+
+**Task**: I was responsible for monitoring and extracting data from the app to generate reports for the research team.
+
+**Action**: Within two days, I developed a Python script to automate the data extraction from the app's AWS S3 bucket and transform it into a web-based report with visualizations.
+
+**Result**: The dashboard I created enabled the research team to access real-time data insights and conduct co-analysis sessions with participants. This led to valuable research outcomes, including a published report in the Foundation for Alcohol Research & Education, and features on ABC News and The Guardian. My dashboard was well-received by the team, and I was given the lead role in developing the web interface for the next phase of the project.
+```
+
+| Setting      | Description                                                                                        |
+| ------------ | -------------------------------------------------------------------------------------------------- |
+| Time         | Early afternoon                                                                                    |
+| Location     | Computational Lab at QUT, showing the work setup and computer screen with code snippets            |
+| Camera Angle | Medium shot, transitioning to a close-up of the computer screen                                    |
+| Style        | Mixed style, desk view                                                                             |
+| Transition   | Show a brief clip of you walking into the Computational Lab, then cut to you sitting at your desk. |
+
+**Segment 5: Passion for Technology and Innovation**
+```markdown
+My passion for technology stems from a desire to create meaningful solutions that have a positive impact on society. I believe I can contribute to the role, team, and company at QUT by bringing fresh perspectives, innovative ideas, and a collaborative spirit to the projects and initiatives we undertake.
+```
+
+| Setting      | Description                                                                                |
+| ------------ | ------------------------------------------------------------------------------------------ |
+| Time         | Late afternoon                                                                             |
+| Location     | In front of Queensland University of Technology (QUT)                                      |
+| Camera Angle | Medium shot, including the QUT building in the background                                  |
+| Style        | Mixed style, outdoor far shot                                                              |
+| Transition   | Start with a wide shot of the QUT building, then zoom in to a medium shot of you speaking. |
+
+### Thursday (UQ)
+
+**Segment 1: Introduction**
+```markdown
+Hi, my name is Dan Tran. I am currently a Research Software Developer at the University of Queensland. I hold a Bachelor's degree in Information Technology and Mathematics from Queensland University of Technology.
+```
+
+| Setting      | Description                                                                                  |
+| ------------ | -------------------------------------------------------------------------------------------- |
+| Time         | Morning                                                                                      |
+| Location     | In front of the University of Queensland entrance with the university logo in the background |
+| Camera Angle | Medium shot, slightly off-center to include the logo                                         |
+| Style        | Mixed style, outdoor far shot                                                                |
+| Transition   | Start with a wide shot of the UQ entrance, then zoom in to a medium shot of you speaking.    |
+
+**Segment 2: Overview of Current Role and Responsibilities**
+```markdown
+In my current role as a Research Software Developer at the ARC Centre of Excellence for Automated Decision-Making and Society (ADM+S) at UQ, I design, develop, test, and maintain software applications for various research projects. I work closely with researchers and academics to implement software solutions that align with the research goals of the centre. 
+```
+
+| Setting      | Description                                                                                                 |
+| ------------ | ----------------------------------------------------------------------------------------------------------- |
+| Time         | Mid-morning                                                                                                 |
+| Location     | In front of the ADM+S office at UQ with a banner showing the organization name                              |
+| Camera Angle | Medium shot, including the office banner in the background                                                  |
+| Style        | Mixed style, office environment                                                                             |
+| Transition   | Show a brief clip of you walking towards the ADM+S office, then cut to you standing in front of the banner. |
+
+**Segment 6: Conclusion and Contact Details**
+```markdown
+
+Thank you for watching my video. If you'd like to connect or learn more about my work, please visit my LinkedIn profile or my ADMS profile. I look forward to the opportunity to contribute to the team at QUT.
+
+```
+
+| Setting      | Description                                                                                    |
+| ------------ | ---------------------------------------------------------------------------------------------- |
+| Time         | Late afternoon                                                                                 |
+| Location     | In front of the main building of UQ                                                            |
+| Camera Angle | Medium shot, similar to Segment 5                                                              |
+| Style        | Mixed style, outdoor far shot                                                                  |
+| Transition   | Continue from Segment 5 without a cut, maintaining the same setting for a seamless transition. |
+
+### General Transition Tips
+- **Smooth Cuts**: Use smooth cuts between scenes to maintain a professional look.
+- **B-Roll**: Include B-roll footage (e.g., walking into buildings, typing on a computer) to make transitions more engaging.
+- **Consistent Lighting**: Ensure consistent lighting across all segments to maintain visual continuity.
+- **Audio**: Use the same microphone setup for all segments to ensure consistent audio quality.
+
+Does this grouping and transition plan work for you? If there's anything you'd like to adjust, let me know!
+
+> Condense the script to fit within a 90-second time frame for all segments combined.
+
+Sure! Here's a condensed version of the script to fit within a 90-second time frame:
+
+### Wednesday (QUT)
+
+**Segment 3: Experience Alignment with Job Application**
+```markdown
+I have been involved in all stages of software development, from requirements gathering to deployment and CI/CD processes. I am proficient in modern web development technologies, especially TypeScript, React, and Svelte. Additionally, I have collaborated with cross-functional teams to deliver software solutions and effectively communicate technical concepts to non-technical stakeholders.
+```
+
+| Setting      | Description                                                                                |
+| ------------ | ------------------------------------------------------------------------------------------ |
+| Time         | Late morning                                                                               |
+| Location     | In front of Queensland University of Technology (QUT)                                      |
+| Camera Angle | Medium shot, including the QUT building in the background                                  |
+| Style        | Mixed style, outdoor far shot                                                              |
+| Transition   | Start with a wide shot of the QUT building, then zoom in to a medium shot of you speaking. |
+
+**Segment 4: Skills and Competencies (Using STAR Method)**
+```markdown
+I'd like to highlight my skills in rapid prototyping, user interface design, and problem-solving. In September 2024, I developed a Python script to automate data extraction for the Ad Observatory project at ADMS. This enabled real-time data insights and led to valuable research outcomes, including a published report and features on ABC News and The Guardian.
+```
+
+| Setting      | Description                                                                                        |
+| ------------ | -------------------------------------------------------------------------------------------------- |
+| Time         | Early afternoon                                                                                    |
+| Location     | Computational Lab at QUT, showing the work setup and computer screen with code snippets            |
+| Camera Angle | Medium shot, transitioning to a close-up of the computer screen                                    |
+| Style        | Mixed style, desk view                                                                             |
+| Transition   | Show a brief clip of you walking into the Computational Lab, then cut to you sitting at your desk. |
+
+**Segment 5: Passion for Technology and Innovation**
+```markdown
+My passion for technology stems from a desire to create meaningful solutions that have a positive impact on society. I believe I can contribute to the role, team, and company at QUT by bringing fresh perspectives, innovative ideas, and a collaborative spirit.
+```
+
+| Setting      | Description                                                                                |
+| ------------ | ------------------------------------------------------------------------------------------ |
+| Time         | Late afternoon                                                                             |
+| Location     | In front of Queensland University of Technology (QUT)                                      |
+| Camera Angle | Medium shot, including the QUT building in the background                                  |
+| Style        | Mixed style, outdoor far shot                                                              |
+| Transition   | Start with a wide shot of the QUT building, then zoom in to a medium shot of you speaking. |
+
+### Thursday (UQ)
+
+**Segment 1: Introduction**
+```markdown
+Hi, my name is Dan Tran. I am currently a Research Software Developer at the University of Queensland. I hold a Bachelor's degree in Information Technology and Mathematics from Queensland University of Technology.
+```
+
+| Setting      | Description                                                                                  |
+| ------------ | -------------------------------------------------------------------------------------------- |
+| Time         | Morning                                                                                      |
+| Location     | In front of the University of Queensland entrance with the university logo in the background |
+| Camera Angle | Medium shot, slightly off-center to include the logo                                         |
+| Style        | Mixed style, outdoor far shot                                                                |
+| Transition   | Start with a wide shot of the UQ entrance, then zoom in to a medium shot of you speaking.    |
+
+**Segment 2: Overview of Current Role and Responsibilities**
+```markdown
+As a Research Software Developer at the Australian Research Council's Centre of Excellence for Automated Decision-Making and Society (ADM+S) at UQ, I design, develop, test, and maintain software applications for various research projects. I work closely with researchers and academics to implement software solutions that align with the research goals of the centre.
+```
+
+| Setting      | Description                                                                                                 |
+| ------------ | ----------------------------------------------------------------------------------------------------------- |
+| Time         | Mid-morning                                                                                                 |
+| Location     | In front of the ADM+S office at UQ with a banner showing the organization name                              |
+| Camera Angle | Medium shot, including the office banner in the background                                                  |
+| Style        | Mixed style, office environment                                                                             |
+| Transition   | Show a brief clip of you walking towards the ADM+S office, then cut to you standing in front of the banner. |
+
+**Segment 6: Conclusion and Contact Details**
+```markdown
+Thank you for watching my video. If you'd like to connect or learn more about my work, please visit my personal profile using the QR code or the link in the description.
+```
+
+| Setting      | Description                                                                                    |
+| ------------ | ---------------------------------------------------------------------------------------------- |
+| Time         | Late afternoon                                                                                 |
+| Location     | In front of the main building of UQ                                                            |
+| Camera Angle | Medium shot, similar to Segment 5                                                              |
+| Style        | Mixed style, outdoor far shot                                                                  |
+| Transition   | Continue from Segment 5 without a cut, maintaining the same setting for a seamless transition. |
+
+### General Transition Tips
+- **Smooth Cuts**: Use smooth cuts between scenes to maintain a professional look.
+- **B-Roll**: Include B-roll footage (e.g., walking into buildings, typing on a computer) to make transitions more engaging.
+- **Consistent Lighting**: Ensure consistent lighting across all segments to maintain visual continuity.
+- **Audio**: Use the same microphone setup for all segments to ensure consistent audio quality.
+
+Does this condensed script and scene setting work for you? If there's anything you'd like to adjust, let me know!
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+# Final Script
+
+### Wednesday (QUT)
+
+**Segment 0: Setting the Scene**
+
+"So Dan, tell me about yourself."
+
+| Setting      | Description                                                                            |
+| ------------ | -------------------------------------------------------------------------------------- |
+| Time         | Morning                                                                                |
+| Location     | In an interview room of an office                                                      |
+| Camera Angle | Medium shot, focusing on you and the interviewer sitting on different sides of a table |
+| Style        | Indoor, professional setting                                                           |
+| Transition   | None, this is the starting point of the video script                                   |
+
+**Segment 3: Experience Alignment with Job Application**
+
+I am proficient in modern web development technologies, especially TypeScript, React, and Svelte. My experience working with researchers has also developed my ability to communicate with non-technical stakeholders effectively, ensuring project success.
+
+| Setting      | Description                                                                                |
+| ------------ | ------------------------------------------------------------------------------------------ |
+| Time         | Late morning                                                                               |
+| Location     | In front of Queensland University of Technology (QUT)                                      |
+| Camera Angle | Medium shot, including the QUT building in the background                                  |
+| Style        | Mixed style, outdoor far shot                                                              |
+| Transition   | Start with a wide shot of the QUT building, then zoom in to a medium shot of you speaking. |
+
+**Segment 4: Skills and Competencies (Using STAR Method)**
+
+For example, September 2024 as we had a study on Alcohol Advertising. Tasked with monitoring the collected data, I rapidly developed a Python script to extract data and generate a responsive and user-friendly prototypical web-based dashboard. This enabled real-time data insights and led to valuable research outcomes, including a published report and features on ABC News and The Guardian.
+
+| Setting      | Description                                                                                        |
+| ------------ | -------------------------------------------------------------------------------------------------- |
+| Time         | Early afternoon                                                                                    |
+| Location     | Computational Lab at QUT, showing the work setup and computer screen with code snippets            |
+| Camera Angle | Medium shot, transitioning to a close-up of the computer screen                                    |
+| Style        | Mixed style, desk view                                                                             |
+| Transition   | Show a brief clip of you walking into the Computational Lab, then cut to you sitting at your desk. |
+
+**Segment 5: Passion for Technology and Innovation**
+
+With my unique experience in research and enthusiasm for technology, I hope to bring fresh perspectives and a collaborative spirit to my current and future teams.
+
+| Setting      | Description                                                                                |
+| ------------ | ------------------------------------------------------------------------------------------ |
+| Time         | Late afternoon                                                                             |
+| Location     | In front of Queensland University of Technology (QUT)                                      |
+| Camera Angle | Medium shot, including the QUT building in the background                                  |
+| Style        | Mixed style, outdoor far shot                                                              |
+| Transition   | Start with a wide shot of the QUT building, then zoom in to a medium shot of you speaking. |
+
+### Thursday (UQ)
+
+**Segment 1: Introduction**
+
+Hi, my name is Dan. I am currently a Research Software Developer at the University of Queensland. I hold a Bachelor's degree in IT and Mathematics from Queensland University of Technology.
+
+| Setting      | Description                                                                                  |
+| ------------ | -------------------------------------------------------------------------------------------- |
+| Time         | Morning                                                                                      |
+| Location     | In front of the University of Queensland entrance with the university logo in the background |
+| Camera Angle | Medium shot, slightly off-center to include the logo                                         |
+| Style        | Mixed style, outdoor far shot                                                                |
+| Transition   | Start with a wide shot of the UQ entrance, then zoom in to a medium shot of you speaking.    |
+
+**Segment 2: Overview of Current Role and Responsibilities**
+
+In my current role at a national research centre at UQ, I gather requirements, plan, design, develop, test, maintain and support software applications for multiple research projects.
+
+| Setting      | Description                                                                                                 |
+| ------------ | ----------------------------------------------------------------------------------------------------------- |
+| Time         | Mid-morning                                                                                                 |
+| Location     | In front of the ADM+S office at UQ with a banner showing the organization name                              |
+| Camera Angle | Medium shot, including the office banner in the background                                                  |
+| Style        | Mixed style, office environment                                                                             |
+| Transition   | Show a brief clip of you walking towards the ADM+S office, then cut to you standing in front of the banner. |
+
+**Segment 6: Conclusion and Contact Details**
+
+And that's me! Thank you for following along. If you'd like find out more about my work, visit my profile using the QR code or the link in the description.
+
+| Setting      | Description                                                                                    |
+| ------------ | ---------------------------------------------------------------------------------------------- |
+| Time         | Late afternoon                                                                                 |
+| Location     | In front of the main building of UQ                                                            |
+| Camera Angle | Medium shot, similar to Segment 5                                                              |
+| Style        | Mixed style, outdoor far shot                                                                  |
+| Transition   | Continue from Segment 5 without a cut, maintaining the same setting for a seamless transition. |
+
+### General Transition Tips
+- **Smooth Cuts**: Use smooth cuts between scenes to maintain a professional look.
+- **B-Roll**: Include B-roll footage (e.g., walking into buildings, typing on a computer) to make transitions more engaging.
+- **Consistent Lighting**: Ensure consistent lighting across all segments to maintain visual continuity.
+- **Audio**: Use the same microphone setup for all segments to ensure consistent audio quality.
+
+Does this condensed script and scene setting work for you? If there's anything you'd like to adjust, let me know!
