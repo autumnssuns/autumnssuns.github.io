@@ -12,7 +12,7 @@ const isValidChildPath = (path: string) => {
 	// path/to/parent/child/index.md
 	return path.split('/').at(-3) === parentDirName
 }
-const files = await Astro.glob(`src/**/index.md`).then((path) => {
+const markdownFiles = await Astro.glob(`src/**/index.{md,mdx}`).then((path) => {
 	return path.filter((p) => isValidChildPath(p.file))
 })
 ---
@@ -21,7 +21,7 @@ const files = await Astro.glob(`src/**/index.md`).then((path) => {
 	<slot />
 	<ul>
 		{
-			files.map((blog) => (
+			markdownFiles.map((blog) => (
 				<li>
 					<a href={blog.url} class='underline'>
 						{blog.frontmatter.title || blog.file.split('/').at(-2)}
