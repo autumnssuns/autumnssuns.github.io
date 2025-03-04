@@ -12,9 +12,12 @@ const isValidChildPath = (path: string) => {
 	// path/to/parent/child/index.md
 	return path.split('/').at(-3) === parentDirName
 }
-const markdownFiles = await Astro.glob(`src/**/index.{md,mdx}`).then((path) => {
-	return path.filter((p) => isValidChildPath(p.file))
-})
+const allMarkdownFiles = Object.values(
+	import.meta.glob('src/**/index.@(md|mdx)', { eager: true })
+) as Record<string, any>[]
+const markdownFiles = allMarkdownFiles
+	.filter((p) => isValidChildPath(p.file))
+	.filter((p) => !p.frontmatter.hidden)
 ---
 
 <NavigatableLayout title={title}>
