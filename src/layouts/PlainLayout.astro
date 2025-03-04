@@ -1,4 +1,6 @@
 ---
+import { twMerge } from 'tailwind-merge'
+
 interface Props {
 	title: string
 	class?: string
@@ -15,7 +17,7 @@ const { title = 'Astro', class: className = '' } = Astro.props
 		<meta name='generator' content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class={className}>
+	<body class={twMerge('relative', className)}>
 		<slot />
 	</body>
 </html>

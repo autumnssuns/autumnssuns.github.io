@@ -8,35 +8,63 @@ type Props = {
 		description?: string
 		tools?: string[]
 		link?: string
+		demo?: {
+			type?: 'iframe' | 'video' | 'image'
+			src?: string
+			alt?: string
+		}
 	}
 }
 const { frontmatter, ...props } = Astro.props
 ---
 
 <NavigatableLayout {...props}>
-	<h1>{frontmatter.title}</h1>
-	{
-		frontmatter.link && (
-			<div>
-				Visit the project at{' '}
-				<a href={frontmatter.link} target='_blank' rel='noopener noreferrer'>
-					{frontmatter.link}
-				</a>
-			</div>
-		)
-	}
-	{frontmatter.description && <p>{frontmatter.description}</p>}
-	{
-		frontmatter.tools && (
-			<div>
-				<h2>Tools</h2>
-				<ul>
-					{frontmatter.tools.map((tool) => (
-						<li>{tool}</li>
-					))}
-				</ul>
-			</div>
-		)
-	}
+	<div class='flex flex-col gap-4 lg:flex-row lg:gap-8'>
+		<div class='flex flex-col gap-2'>
+			<h1>{frontmatter.title}</h1>
+			{
+				frontmatter.link && (
+					<div>
+						Visit the project at{' '}
+						<a href={frontmatter.link} target='_blank' rel='noopener noreferrer'>
+							{frontmatter.link}
+						</a>
+					</div>
+				)
+			}
+			{frontmatter.description && <p>{frontmatter.description}</p>}
+			{
+				frontmatter.tools && (
+					<div>
+						<h2>Tools</h2>
+						<div class='flex flex-wrap gap-2'>
+							{frontmatter.tools.map((tool) => (
+								<span class='rounded-md px-2 py-1 text-sm font-medium text-black shadow'>
+									{tool}
+								</span>
+							))}
+						</div>
+					</div>
+				)
+			}
+		</div>
+		<div class='size-fit overflow-clip rounded-lg shadow-2xl'>
+			{
+				frontmatter.demo && frontmatter.demo.type === 'iframe' && (
+					<div class='group relative aspect-video w-[320px] overflow-hidden md:w-[768px]'>
+						<span class='absolute bottom-2 left-2 z-10 w-fit rounded-md border border-white border-opacity-15 bg-gradient-to-r from-purple-900 to-blue-600 px-2 py-1 text-sm font-medium text-white shadow-lg transition-opacity group-hover:pointer-events-none group-hover:opacity-0'>
+							Demo
+						</span>
+						<iframe
+							src={frontmatter.demo.src}
+							class='aspect-video w-[1366px] origin-top-left scale-[calc(320/1366)] md:scale-[calc(768/1366)]'
+							title={frontmatter.demo.alt}
+						/>
+					</div>
+				)
+			}
+		</div>
+	</div>
+	<!-- <pre>{JSON.stringify(frontmatter, null, 2)}</pre> -->
 	<slot />
 </NavigatableLayout>
