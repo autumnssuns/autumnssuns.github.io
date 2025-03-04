@@ -1,0 +1,42 @@
+---
+import NavigatableLayout from './NavigatableLayout.astro'
+
+type Props = {
+	title: string
+	frontmatter: {
+		title: string
+		description?: string
+		tools?: string[]
+		link?: string
+	}
+}
+const { frontmatter, ...props } = Astro.props
+---
+
+<NavigatableLayout {...props}>
+	<h1>{frontmatter.title}</h1>
+	{
+		frontmatter.link && (
+			<div>
+				Visit the project at{' '}
+				<a href={frontmatter.link} target='_blank' rel='noopener noreferrer'>
+					{frontmatter.link}
+				</a>
+			</div>
+		)
+	}
+	{frontmatter.description && <p>{frontmatter.description}</p>}
+	{
+		frontmatter.tools && (
+			<div>
+				<h2>Tools</h2>
+				<ul>
+					{frontmatter.tools.map((tool) => (
+						<li>{tool}</li>
+					))}
+				</ul>
+			</div>
+		)
+	}
+	<slot />
+</NavigatableLayout>
