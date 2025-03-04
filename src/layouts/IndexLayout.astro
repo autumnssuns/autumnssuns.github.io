@@ -13,7 +13,7 @@ const isValidChildPath = (path: string) => {
 	return path.split('/').at(-3) === parentDirName
 }
 const markdownFiles = await Astro.glob(`src/**/index.{md,mdx}`).then((path) => {
-	return path.filter((p) => isValidChildPath(p.file)).filter((p) => !p.frontmatter.hidden)
+	return path.filter((p) => isValidChildPath(p.file))
 })
 ---
 
