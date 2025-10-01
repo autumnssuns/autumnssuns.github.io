@@ -160,16 +160,21 @@ const work: WorkList = [
 ]
 ---
 
+<script>
+	import { paginateAll } from 'vfrag'
+	paginateAll({ sections: 'main', aspectRatio: 210 / 297, running: false })
+</script>
+
 <NavigatableLayout title='Resume - Dan Tran' class='prose-p:m-0 prose-ul:m-0 prose-li:m-0'>
-	<main class='flex flex-col gap-4 leading-relaxed'>
-		<div class='flex flex-col justify-between md:flex-row'>
-			<div class='title-group text-center md:text-left'>
+	<main class='flex flex-col gap-2 leading-relaxed'>
+		<div class='flex flex-col justify-between sm:flex-row'>
+			<div class='title-group text-center sm:text-left'>
 				<h1 class='m-0 text-6xl font-semibold'>{about.name}</h1>
 				<h2 class='m-0 text-xl font-bold'>{about.title}</h2>
 			</div>
 			<Contacts
 				contacts={about.contacts}
-				class='flex flex-wrap justify-center gap-2 md:grid md:grid-cols-2'
+				class='flex h-fit w-fit flex-wrap justify-center gap-2 sm:grid sm:grid-cols-[auto_auto]'
 			/>
 		</div>
 		<p>{about.description}</p>
@@ -189,6 +194,8 @@ const work: WorkList = [
 <style>
 	:root {
 		--color-primary: #52247a;
+		font-size: large;
+		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 		line-height: 2;
 	}
 
@@ -201,11 +208,29 @@ const work: WorkList = [
 	}
 
 	main {
-		@apply w-full max-w-screen-lg md:p-8 md:shadow-lg;
+		@apply w-full max-w-screen-lg sm:p-8 sm:shadow-lg;
+		aspect-ratio: 210 / 297;
+		zoom: 0.77;
 	}
 
 	h1,
 	h2 {
 		color: var(--color-primary);
+	}
+
+	@media print {
+		.root {
+			display: none;
+		}
+		main {
+			box-shadow: none;
+		}
+		header {
+			display: none;
+		}
+		@page {
+			/* size: A4; */
+			margin: -0.5rem -1rem -0.5rem -1rem;
+		}
 	}
 </style>

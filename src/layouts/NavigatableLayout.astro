@@ -19,7 +19,7 @@ const { class: className, ...props } = Astro.props
 	)}
 	{...props}
 >
-	<div class='flex w-full flex-col-reverse justify-between md:flex-row md:items-center'>
+	<header class='flex w-full flex-col-reverse justify-between md:flex-row md:items-center'>
 		<Breadcrumbs class='md:content-center'>
 			<svg
 				slot='separator'
@@ -51,7 +51,7 @@ const { class: className, ...props } = Astro.props
 			</svg>
 		</Breadcrumbs>
 		<Navbar />
-	</div>
+	</header>
 	<div class='px-4 md:px-8'>
 		<slot />
 	</div>
@@ -60,5 +60,11 @@ const { class: className, ...props } = Astro.props
 <style>
 	:root {
 		scrollbar-gutter: stable both-edges;
+	}
+
+	@media print {
+		header {
+			display: none;
+		}
 	}
 </style>

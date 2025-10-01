@@ -11,11 +11,11 @@ const { title = 'Skills', skills } = Astro.props
 ---
 
 <Section title={title} class='items-center'>
-	<div class='grid grid-cols-1 gap-1 md:w-4/5 md:grid-cols-[1fr_4fr]'>
+	<div class='grid grid-cols-1 gap-1 sm:grid-cols-[1fr_4fr]'>
 		{
 			skills?.map(({ type, skills }) => (
 				<>
-					<div class='pr-2 font-bold md:text-right'>{type}</div>
+					<div class='pr-2 font-bold sm:text-right'>{type}</div>
 					<div>{skills.join(', ')}</div>
 				</>
 			))
