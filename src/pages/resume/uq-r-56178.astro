@@ -1,0 +1,289 @@
+---
+import Contacts from './components/Contacts.astro'
+import Section from './components/Section.astro'
+import SkillsList from './sections/SkillsList.astro'
+// import PlainLayout from '@layouts/PlainLayout.astro'
+import Printable from './printable.astro'
+import NavigatableLayout from 'src/layouts/NavigatableLayout.astro'
+import type { About, EducationList, SkillList, WorkList } from './types'
+import Education from './sections/Education.astro'
+import WorkExperience from './sections/WorkExperience.astro'
+
+const about: About = {
+	name: 'Dan Tran',
+	title: 'Full Stack Developer',
+	contacts: [
+		{
+			type: 'email',
+			label: 'dan.k.tran@gmail.com',
+			value: 'mailto:dan.k.tran@gmail.com',
+			icon: 'mdi:email'
+		},
+		{
+			type: 'link',
+			label: 'autumnssuns',
+			value: 'https://github.com/autumnssuns',
+			icon: 'mdi:github'
+		},
+		{
+			type: 'link',
+			label: 'dan.k.tran',
+			value: 'https://www.linkedin.com/in/dan-k-tran',
+			icon: 'mdi:linkedin'
+		}
+	],
+	description:
+		// "Highly experienced Full Stack Developer and Technical Leader specialising in designing, architecting, and deploying complex digital research infrastructure. Currently serving as a Research Software Developer at the University of Queensland, with a proven track record of translating abstract research needs into robust, scalable, and high-performance web applications. Expertise is deeply aligned with the UQ Research Computing Centre's requirements, encompassing modern full-stack development with TypeScript, React, Svelte, and serverless architectures (AWS, Lambda, API Gateway, CDK). Adept at providing technical leadership, managing multiple critical projects independently, and ensuring high-quality API design and actionable technical documentation for diverse stakeholders. Passionate about leveraging technology to drive world-class discovery in the research sector."
+		'Motivated Full Stack Developer with a strong foundation in developing digital systems to enhance research and educational experiences. With over 4 years of experience in software development in the higher education sector, I have a proven track record in building critical software applications for various nation-wide research projects. With a people-centric approach to software engineering and collaboration with researchers on a national scale, I am passionate about leveraging technology to create meaningful impacts and drive innovation in the research community. Committed to continuous learning, I am seeking the opportunity to take ownership of projects that challenge unsolved problems.'
+}
+
+const technicalSkills: SkillList = [
+	{
+		type: 'Languages',
+		skills: ['TypeScript', 'HTML', 'CSS', 'Python', 'SQL', 'C#', 'Java']
+	},
+	{
+		type: 'Frameworks',
+		skills: [
+			'Svelte',
+			'React',
+			'Tailwind CSS',
+			'Hono',
+			'ExpressJS',
+			'ASP.NET MVC',
+			'Entity Framework'
+		]
+	},
+	{
+		type: 'Systems Design',
+		skills: [
+			'AWS (S3, RDS, Lambda, API Gateway)',
+			'OpenSearch',
+			'Docker',
+			'IaC (CDK)',
+			'Git',
+			'GitHub'
+		]
+	}
+]
+
+const softSkills: SkillList = [
+	{
+		type: 'Communication',
+		skills: ['Teamwork', 'Stakeholder Engagement', 'Teaching', 'Technical Writing', 'Presentation']
+	},
+	{
+		type: 'Organisation',
+		skills: ['Critical and Systematic Thinking', 'Resources Management', 'Workflow Planning']
+	}
+]
+
+const education: EducationList = [
+	{
+		title:
+			'Bachelor of Information Technology (Computer Science)\nBachelor of Mathematics (Applied & Computational Mathematics)',
+		provider: 'Queensland University of Technology',
+		duration: 'Feb 2019 - Dec 2023',
+		details: ['GPA 7.0 on a 7-point scale']
+	}
+]
+
+const work: WorkList = [
+	{
+		title: 'Research Software Developer',
+		company:
+			'ARC Centre of Excellence for Automated Decision-Making and Society; Australian Internet Observatory\nThe University of Queensland',
+		summary:
+			'Lead developer for strategic research computing projects, providing full-stack architecture and technical direction to deliver high-impact digital research infrastructure.',
+		duration: 'Jul 2024 - Present',
+		details: [
+			'Lead the full-stack development of the Australian Ad Observatory dashboard, enabling researchers to analyse over 100,000 digital advertisements.',
+			'Engineer the front-end (TypeScript/Svelte) with virtualisation and caching to efficiently browse high-volume datasets.',
+			'Design and implement an in-house Python API framework (deployed on AWS Lambda/API Gateway), integrating with AWS RDS and OpenSearch for fast, complex querying of a substantial, unstructured advertisement data.',
+			'Collaborate closely with national research teams to gather requirements and manage project scope, ensuring alignment with research goals, technical feasibility, and timely delivery.',
+			'Produce comprehensive product requirements documents, project plans, API documentation and user guides to ensure clarity and maintainability.',
+			'Develop a bespoke PDF navigation application (Electron/React/TypeScript) supporting advanced, chronological annotation features to support Economic Justice Australia in analysing large volumes of legal documents.',
+			'Manage automated pipelines for testing, building, and releasing software with GitHub Actions.',
+			'Develop AI-powered data visualisation tools to support the analysis of complex digital social data to support cutting-edge research in social, economic, health and environmental issues.'
+		]
+	},
+	{
+		title: 'Full Stack Web Developer',
+		company: 'STiMulate, Student Success Group | Queensland University of Technology',
+		summary:
+			'Executed the complete software development lifecycle for the Volunteer Rostering System, supporting thousands of staff and students annually.',
+		duration: 'Aug 2021 - Jun 2024',
+		details: [
+			'Developed and maintained a high-availability MVC web application with ASP.NET, Entity Framework, and MS SQL Server.',
+			'Execute the complete life-cycle of feature development: identifying demand, research, feasibility evaluation, implementation, testing, delivery, maintenance and operation.',
+			"Collaborated with QUT's infrastructure team to migrate data and deploy a new server with minimal downtime.",
+			'Reformed project management with GitHub Issues and Projects and enhancing system documentation with DocFX.',
+			'Engaged with stakeholders to analyse requirements in alignment with business goals and strategic directions.'
+		]
+	},
+	{
+		title: 'Software Developer',
+		company: 'Queensland University of Technology',
+		summary:
+			'Sole developer of a NodeJS application empowering the authoring of online learning materials at scale.',
+		duration: 'Feb 2024 - Jun 2024',
+		details: [
+			"Communicated with a small, dynamic team to steer the project's direction and handle arising requirements.",
+			'Designed and built a Node.js application featuring a customisable markdown processor and Canvas API integration to rapidly author online learning materials.',
+			'Successfully applied the application to deploy innovative Canvas pages, leading to a successful demonstration at the L&T Colloquium.',
+			'Managed the testing, deployment, and continuous integration of the software, while providing ongoing technical guidance to the team.',
+			'Exercise project management acumen through prioritisation and task delegation with GitHub Projects.'
+		]
+	},
+	{
+		title: 'Casual Academic',
+		company: 'Faculty of Science; QUT College | Queensland University of Technology',
+		summary:
+			'Taught and engaged 200+ students per semester in IT and Engineering units, instructing core software development concepts.',
+		duration: 'Mar 2022 - Jun 2024',
+		details: [
+			'Tutor in various IT and Engineering units, teaching programming languages: Python, C#, Java, JavaScript and their frameworks.',
+			'Imparted important software development concepts: OOP, Agile and Iterative Development, Source Control with Git, Test Driven Development and CI/CD.',
+			'Achieved 91% satisfaction with teaching approach in Student Voice Survey.'
+		]
+	},
+	{
+		title: 'Unit Development Assistant',
+		company: 'Faculty of Science | Queensland University of Technology',
+		duration: 'Mar 2023 - Jun 2024',
+		summary:
+			'Supported the administration of various units with technical expertise and content development.',
+		details: [
+			'Developed teaching materials with 50+ Canvas pages deployed for 5 units, ensuring alignment with curriculum objectives.',
+			'Collaborated closely with course coordinators to gather insights and expectations from students, allowing the creation of engaging and relevant training materials.',
+			'Configured a container- and cloud-based automatic code marking system serving 1000+ students per semester, reducing manual grading time by 50%.'
+		]
+	}
+]
+---
+
+<!--
+About This Opportunity  
+This is an exciting chance to shape the future of digital research at UQ by taking the lead in designing and building the web applications that power world-class discovery. In this role, you’ll contribute to both the front-end and back-end development of innovative platforms such as the UQ Digital Research Infrastructure Portal, ensuring our research community has the tools they need to thrive.
+
+As part of a small, dynamic, and collaborative team of specialists, you’ll enjoy the freedom to explore emerging technologies, experiment with new solutions, and drive innovation in a supportive and forward-thinking environment. With flexible working options and the autonomy to take ownership of your projects, this is an opportunity to expand your technical expertise while making a real impact on research that matters.
+
+If innovating at the intersection of tech and research excites you, join us as our Full Stack Developer and make it happen!
+
+Key responsibilities will include: 
+
+Take the lead in designing, developing, and maintaining full-stack web applications that support UQ’s research community.
+
+Collaborate with diverse stakeholders to translate business needs into effective digital research solutions.
+
+Provide technical leadership on new initiatives, ensuring high-quality architecture, documentation, and delivery.
+
+Explore and implement emerging technologies to enhance the performance, usability, and sustainability of UQ’s research applications.
+
+About Research Computing Centre
+Established in 2011, the Research Computing Centre is a University level Centre reporting to the Deputy Vice-Chancellor (Research and Innovation) that provides coordinated management and support of the University’s sustained and substantial investment in Digital Research infrastructure. The Research Computing Centre is an innovative and multidisciplinary environment that supports collaboration to facilitate discoveries in science and engineering, humanities, and social sciences, through advanced computation, data analysis and other digital research tools. The Centre enhances the University’s Digital Research infrastructure and provides support for interdisciplinary research and education. The Centre interacts with all Faculties and Institutes, the University’s Information Technology Services, research partners as well as industry and government. 
+
+Information about the Centre may be accessed on the Centre’s web site at Research Computing Centre - University of Queensland
+
+
+Join a community where excellence is at the core of our culture, contributions are valued and a range of benefits and rewards are available, such as: 
+
+Up to 26 weeks paid parental leave/paid primary care leave 
+
+17% superannuation contributions + 17.5% annual leave loading 
+
+Access to flexible working arrangements including hybrid working options, flexible start/finish times, purchased leave, and a condensed fortnight 
+
+Health and wellness discounts – fitness passport access, free yearly flu vaccinations, discounted health insurance, and access to our Employee Assistance Program for staff and their immediate family 
+
+Career development opportunities –access to exclusive internal-only vacancies and our Study for Staff program 
+
+On campus childcare options 
+
+Affordable parking (from just $6.15 a day) 
+
+Salary packaging options 
+
+About You 
+Extensive experience in web development, software engineering, or a related field, with a strong technical foundation.
+
+Proven expertise in modern web development standards and full-stack application design.
+
+Solid understanding of software architecture, database design, and API development.
+
+Skilled in TypeScript, React, or similar frameworks, with a track record of building scalable solutions.
+
+Comfortable working independently and collaboratively, managing multiple priorities under tight deadlines.
+
+Effective at communicating with diverse stakeholders and producing clear, actionable technical documentation. 
+
+The successful candidate may be required to complete a number of pre-employment checks, including right to work in Australia and a criminal check.
+
+You must maintain unrestricted work rights in Australia for the duration of this appointment to apply. Employer sponsored work rights are not available for this appointment.  
+
+  
+
+Questions?  
+For more information about this opportunity, please contact Ashley Wright at ashley.wright@uq.edu.au 
+
+  
+
+For application inquiries, please reach out to the Talent Acquisition team at talent@uq.edu.au, stating the job reference number (below) in the subject line.  
+ 
+
+Want to Apply?  
+We welcome applications from all individuals and are committed to an inclusive and accessible recruitment process. To be considered, please ensure you upload:  
+
+Resume 
+
+A cover letter summarising how your background aligns with the 'About You' section. Please note: Applications submitted without a cover letter will not be considered. 
+
+  
+
+Our strength as an institution lies in our diverse colleagues. We're dedicated to equity, diversity, and inclusion, fostering an environment that mirrors our wider community. We're committed to attracting, retaining, and promoting diverse talent. If you require an alternative method to submit your application due to accessibility needs or personal circumstances, please contact talent@uq.edu.au. 
+
+  
+
+UQ is committed to a fair, equitable and inclusive selection process, which recognises that some applicants may face additional barriers and challenges which have impacted and/or continue to impact their career trajectory. Candidates who don’t meet all criteria are encouraged to apply and demonstrate their potential. The selection panel considers both potential and performance relative to opportunities when assessing suitability for the role.  
+-->
+<Printable>
+	<NavigatableLayout title='Resume - Dan Tran' class='prose-p:m-0 prose-ul:m-0 prose-li:m-0'>
+		<main class='flex flex-col gap-2 p-12 leading-relaxed'>
+			<div class='flex flex-col items-center justify-between sm:flex-row'>
+				<div class='title-group text-center sm:text-left'>
+					<h1 class='m-0 -ml-1 text-left text-6xl font-semibold'>{about.name}</h1>
+					<h2 class='m-0 text-xl font-bold'>{about.title}</h2>
+				</div>
+				<Contacts
+					contacts={about.contacts}
+					class='flex h-fit flex-wrap justify-center gap-2 sm:grid sm:grid-cols-[auto_auto]'
+				/>
+			</div>
+			<p>{about.description}</p>
+			<SkillsList title='Technical skills' skills={technicalSkills} />
+			<SkillsList title='Soft skills' skills={softSkills} />
+			<Education title='Education' degrees={education} />
+			<!-- <Section title='Professional Experience' /> -->
+			<WorkExperience title='Professional Experience' experience={work} />
+			<!-- <Section title='Academic Projects' /> -->
+			<!-- <Section title='Awards' /> -->
+			<Section title='Referees'>
+				<p>Provided upon request</p>
+			</Section>
+		</main>
+	</NavigatableLayout>
+</Printable>
+
+<style is:global>
+	:root {
+		--color-primary: #52247a;
+		line-height: 3;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		font-size: 18px;
+	}
+
+	h1,
+	h2 {
+		color: var(--color-primary);
+	}
+</style>

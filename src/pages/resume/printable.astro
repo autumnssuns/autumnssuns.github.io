@@ -1,0 +1,61 @@
+<script>
+	import { paginateAll } from 'vfrag'
+	paginateAll({ sections: 'main', aspectRatio: 210 / 297, running: false }).then(() => {
+		const totalPages = document.documentElement.style.getPropertyValue('--pages')
+		document.documentElement.style.setProperty('--pages', `"${totalPages}"`)
+	})
+</script>
+
+<slot />
+
+<style is:global>
+	:root {
+		line-height: 2;
+	}
+
+	html {
+		@apply flex h-full justify-center;
+	}
+
+	body {
+		@apply flex w-full flex-col items-center;
+	}
+
+	main {
+		@apply relative mb-6 w-full max-w-screen-lg sm:p-20 sm:shadow-lg;
+		aspect-ratio: 210 / 297;
+	}
+
+	[data-page]::after {
+		position: absolute;
+		content: 'Page ' attr(data-page) ' of ' var(--pages);
+		bottom: 0rem;
+		right: 1.5rem;
+	}
+
+	h1,
+	h2 {
+		color: var(--color-primary) !important;
+	}
+
+	.contacts * {
+		color: var(--color-primary) !important;
+	}
+
+	@media print {
+		.root {
+			display: none;
+		}
+		main {
+			box-shadow: none;
+			zoom: 0.75;
+		}
+		header {
+			display: none;
+		}
+		@page {
+			size: A4;
+			margin: -0.25rem -3rem;
+		}
+	}
+</style>

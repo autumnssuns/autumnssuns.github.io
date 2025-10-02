@@ -1,5 +1,5 @@
 ---
-import Navbar from 'src/components/share/nav/Navbar.astro'
+import Printable from './printable.astro'
 import Contacts from './components/Contacts.astro'
 import Section from './components/Section.astro'
 import SkillsList from './sections/SkillsList.astro'
@@ -166,75 +166,37 @@ const work: WorkList = [
 ]
 ---
 
-<script>
-	import { paginateAll } from 'vfrag'
-	paginateAll({ sections: '.section', aspectRatio: 210 / 297, running: false })
-</script>
-
-<NavigatableLayout title='Resume - Dan Tran' class='prose-p:m-0 prose-ul:m-0 prose-li:m-0'>
-	<main class='section mb-4 flex flex-col gap-4 leading-relaxed'>
-		<div class='flex flex-col justify-between sm:flex-row'>
-			<div class='title-group text-center sm:text-left'>
-				<h1 class='m-0 text-6xl font-semibold'>{about.name}</h1>
-				<h2 class='m-0 text-xl font-bold'>{about.title}</h2>
+<Printable>
+	<NavigatableLayout title='Resume - Dan Tran' class='prose-p:m-0 prose-ul:m-0 prose-li:m-0'>
+		<main class='flex flex-col gap-4 leading-relaxed'>
+			<div class='flex flex-col justify-between sm:flex-row'>
+				<div class='title-group text-center sm:text-left'>
+					<h1 class='m-0 text-6xl font-semibold'>{about.name}</h1>
+					<h2 class='m-0 text-xl font-bold'>{about.title}</h2>
+				</div>
+				<Contacts
+					contacts={about.contacts}
+					class='flex flex-wrap justify-center gap-2 sm:grid sm:grid-cols-2'
+				/>
 			</div>
-			<Contacts
-				contacts={about.contacts}
-				class='flex flex-wrap justify-center gap-2 sm:grid sm:grid-cols-2'
-			/>
-		</div>
-		<p>{about.description}</p>
-		<SkillsList title='Technical skills' skills={technicalSkills} />
-		<SkillsList title='Soft skills' skills={softSkills} />
-		<Education title='Education' degrees={education} />
-		<!-- <Section title='Professional Experience' /> -->
-		<WorkExperience title='Professional Experience' experience={work} />
-		<!-- <Section title='Academic Projects' /> -->
-		<!-- <Section title='Awards' /> -->
-		<Section title='Referees'>
-			<p>Provided upon request</p>
-		</Section>
-	</main>
-</NavigatableLayout>
+			<p>{about.description}</p>
+			<SkillsList title='Technical skills' skills={technicalSkills} />
+			<SkillsList title='Soft skills' skills={softSkills} />
+			<Education title='Education' degrees={education} />
+			<!-- <Section title='Professional Experience' /> -->
+			<WorkExperience title='Professional Experience' experience={work} />
+			<!-- <Section title='Academic Projects' /> -->
+			<!-- <Section title='Awards' /> -->
+			<Section title='Referees'>
+				<p>Provided upon request</p>
+			</Section>
+		</main>
+	</NavigatableLayout>
+</Printable>
 
 <style>
 	:root {
 		--color-primary: #52247a;
 		line-height: 2;
-	}
-
-	html {
-		@apply flex h-full justify-center;
-	}
-
-	body {
-		@apply flex w-full flex-col items-center;
-	}
-
-	main {
-		@apply w-full max-w-screen-lg sm:p-12 sm:shadow-lg;
-		aspect-ratio: 210 / 297;
-	}
-
-	h1,
-	h2 {
-		color: var(--color-primary);
-	}
-
-	@media print {
-		.root {
-			display: none;
-		}
-		main {
-			box-shadow: none;
-			zoom: 0.75;
-		}
-		header {
-			display: none;
-		}
-		@page {
-			size: A4;
-			margin: -0.25rem -3rem;
-		}
 	}
 </style>

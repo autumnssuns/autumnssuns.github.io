@@ -1,4 +1,5 @@
 ---
+import { twMerge } from 'tailwind-merge'
 import Contact from './Contact.astro'
 
 const { contacts, class: className } = Astro.props as {
@@ -11,6 +12,6 @@ const { contacts, class: className } = Astro.props as {
 }
 ---
 
-<div class={className}>
+<div class={twMerge('contacts', className)}>
 	{contacts?.map((contact) => <Contact {...contact} />)}
 </div>
