@@ -6,6 +6,13 @@ type Props = {
 	experience: WorkList
 }
 const { title = 'Skills', experience } = Astro.props
+import md from 'markdown-it'
+
+const markdown = new md()
+
+function renderMarkdown(text: string) {
+	return markdown.render(text)
+}
 ---
 
 <Section title={title} class='w-full items-center'>
@@ -14,16 +21,44 @@ const { title = 'Skills', experience } = Astro.props
 			<div class='w-full'>
 				<div class='flex flex-col-reverse items-baseline gap-2 sm:grid sm:grid-cols-[3fr_1fr]'>
 					<div class='whitespace-pre-wrap font-bold'>{job.title}</div>
-					<div class='text-right text-sm'>{job.duration}</div>
+					<div class='text-right'>{job.duration}</div>
 				</div>
 				<div>
 					<div class='whitespace-pre'>{job.company}</div>
-					<div class='font-bold italic text-[#7D2884]'>{job.summary}</div>
-					<ul class='list-disc pl-8'>
+					<div class='my-2 font-medium text-[#7D2884]'>{job.summary}</div>
+					{job.details instanceof Array && typeof job.details[0] === 'string' ? (
+						<ul class='list-disc pl-8'>
+							{job.details?.map((detail) => (
+								<li set:html={renderMarkdown(detail as string)} />
+							))}
+						</ul>
+					) : (
+						<ul class='list-disc pl-8'>
+							{(job.details as any[])?.map((detail) => (
+								<li>
+									<div set:html={renderMarkdown((detail as any).summary)} />
+									{(detail as any).details?.length > 0 && (
+										<ul class='list-disc pl-8'>
+											{(detail as any).details?.map((subDetail: any) => (
+												<li
+													set:html={
+														typeof subDetail === 'string'
+															? renderMarkdown(subDetail)
+															: renderMarkdown(subDetail.summary)
+													}
+												/>
+											))}
+										</ul>
+									)}
+								</li>
+							))}
+						</ul>
+					)}
+					{/* <ul class='list-disc pl-8'>
 						{job.details?.map((detail) => (
-							<li>{detail}</li>
+							<li set:html={renderMarkdown(detail)} />
 						))}
-					</ul>
+					</ul> */}
 				</div>
 			</div>
 		))

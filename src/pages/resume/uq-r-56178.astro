@@ -34,25 +34,18 @@ const about: About = {
 	],
 	description:
 		// "Highly experienced Full Stack Developer and Technical Leader specialising in designing, architecting, and deploying complex digital research infrastructure. Currently serving as a Research Software Developer at the University of Queensland, with a proven track record of translating abstract research needs into robust, scalable, and high-performance web applications. Expertise is deeply aligned with the UQ Research Computing Centre's requirements, encompassing modern full-stack development with TypeScript, React, Svelte, and serverless architectures (AWS, Lambda, API Gateway, CDK). Adept at providing technical leadership, managing multiple critical projects independently, and ensuring high-quality API design and actionable technical documentation for diverse stakeholders. Passionate about leveraging technology to drive world-class discovery in the research sector."
-		'Motivated Full Stack Developer with a strong foundation in developing digital systems to enhance research and educational experiences. With over 4 years of experience in software development in the higher education sector, I have a proven track record in building critical software applications for various nation-wide research projects. With a people-centric approach to software engineering and collaboration with researchers on a national scale, I am passionate about leveraging technology to create meaningful impacts and drive innovation in the research community. Committed to continuous learning, I am seeking the opportunity to take ownership of projects that challenge unsolved problems.'
+		// 'Motivated Full Stack Developer with a strong foundation in developing digital systems to enhance research and educational experiences. With over 4 years of experience in software development in the higher education sector, I have a proven track record in building critical software applications for various nation-wide research projects. With a people-centric approach to software engineering and collaboration with researchers on a national scale, I am passionate about leveraging technology to create meaningful impacts and drive innovation in the research community. Committed to continuous learning, I am seeking the opportunity to take ownership of projects that challenge unsolved problems.'
+		'Highly motivated and experienced research software developer with Computer Science and Mathematics background. Proven track record in building critical full-stack applications for international and Australia-wide research projects. User-centric, autonomous, and well-versed in research environments, I excel in providing technical leadership and delivering high-impact solutions.'
 }
 
 const technicalSkills: SkillList = [
 	{
 		type: 'Languages',
-		skills: ['TypeScript', 'HTML', 'CSS', 'Python', 'SQL', 'C#', 'Java']
+		skills: ['TypeScript', 'Python', 'HTML', 'CSS', 'SQL', 'C#', 'Java']
 	},
 	{
 		type: 'Frameworks',
-		skills: [
-			'Svelte',
-			'React',
-			'Tailwind CSS',
-			'Hono',
-			'ExpressJS',
-			'ASP.NET MVC',
-			'Entity Framework'
-		]
+		skills: ['Svelte', 'ReactJS', 'Tailwind CSS', 'ExpressJS', 'ASP.NET MVC', 'Entity Framework']
 	},
 	{
 		type: 'Systems Design',
@@ -70,7 +63,7 @@ const technicalSkills: SkillList = [
 const softSkills: SkillList = [
 	{
 		type: 'Communication',
-		skills: ['Teamwork', 'Stakeholder Engagement', 'Teaching', 'Technical Writing', 'Presentation']
+		skills: ['Stakeholder Engagement', 'Workshop Facilitation', 'Technical Writing', 'Presentation']
 	},
 	{
 		type: 'Organisation',
@@ -84,7 +77,7 @@ const education: EducationList = [
 			'Bachelor of Information Technology (Computer Science)\nBachelor of Mathematics (Applied & Computational Mathematics)',
 		provider: 'Queensland University of Technology',
 		duration: 'Feb 2019 - Dec 2023',
-		details: ['GPA 7.0 on a 7-point scale']
+		details: ['GPA: 7.0/7.0']
 	}
 ]
 
@@ -96,15 +89,39 @@ const work: WorkList = [
 		summary:
 			'Lead developer for strategic research computing projects, providing full-stack architecture and technical direction to deliver high-impact digital research infrastructure.',
 		duration: 'Jul 2024 - Present',
+		// details: [
+		// 	'Lead the full-stack development of the Australian Ad Observatory dashboard, enabling researchers to analyse over 100,000 digital advertisements.',
+		// 	'Engineer the front-end (TypeScript/Svelte) with virtualisation and caching to efficiently browse high-volume datasets.',
+		// 	'Design and implement an in-house Python API framework (deployed on AWS Lambda/API Gateway), integrating with AWS RDS and OpenSearch for fast, complex querying of a substantial, unstructured advertisement data.',
+		// 	'Collaborate closely with national research teams to gather requirements and manage project scope, ensuring alignment with research goals, technical feasibility, and timely delivery.',
+		// 	'Produce comprehensive product requirements documents, project plans, API documentation and user guides to ensure clarity and maintainability.',
+		// 	'Develop a bespoke PDF navigation application (Electron/React/TypeScript) supporting advanced, chronological annotation features to support Economic Justice Australia in analysing large volumes of legal documents.',
+		// 	'Manage automated pipelines for testing, building, and releasing software with GitHub Actions.',
+		// 	'Develop AI-powered data visualisation tools to support the analysis of complex digital social data to support cutting-edge research in social, economic, health and environmental issues.'
+		// ]
 		details: [
-			'Lead the full-stack development of the Australian Ad Observatory dashboard, enabling researchers to analyse over 100,000 digital advertisements.',
-			'Engineer the front-end (TypeScript/Svelte) with virtualisation and caching to efficiently browse high-volume datasets.',
-			'Design and implement an in-house Python API framework (deployed on AWS Lambda/API Gateway), integrating with AWS RDS and OpenSearch for fast, complex querying of a substantial, unstructured advertisement data.',
-			'Collaborate closely with national research teams to gather requirements and manage project scope, ensuring alignment with research goals, technical feasibility, and timely delivery.',
-			'Produce comprehensive product requirements documents, project plans, API documentation and user guides to ensure clarity and maintainability.',
-			'Develop a bespoke PDF navigation application (Electron/React/TypeScript) supporting advanced, chronological annotation features to support Economic Justice Australia in analysing large volumes of legal documents.',
-			'Manage automated pipelines for testing, building, and releasing software with GitHub Actions.',
-			'Develop AI-powered data visualisation tools to support the analysis of complex digital social data to support cutting-edge research in social, economic, health and environmental issues.'
+			{
+				summary: 'Australian Ad Observatory Project',
+				details: [
+					'Lead the full-stack development of the Australian Ad Observatory dashboard, enabling researchers to analyse over 100,000 digital advertisements.',
+					'Engineer the front-end (TypeScript/Svelte) with virtualisation and caching to efficiently browse high-volume datasets.',
+					'Design and implement an in-house Python API framework (deployed on AWS Lambda/API Gateway), integrating with AWS RDS and OpenSearch for fast, complex querying of a substantial, unstructured advertisement data.',
+					'Collaborate closely with national research teams to gather requirements and manage project scope, ensuring alignment with research goals, technical feasibility, and timely delivery.',
+					'Produce comprehensive product requirements documents, project plans, API documentation and user guides to ensure clarity and maintainability.'
+				]
+			},
+			{
+				summary: 'Designing Automated Tools to Support Welfare Rights Advocacy Project',
+				details: []
+			},
+			{
+				summary: 'Other Initiatives',
+				details: []
+			},
+			{
+				summary: 'General Contributions',
+				details: []
+			}
 		]
 	},
 	{
@@ -248,7 +265,7 @@ UQ is committed to a fair, equitable and inclusive selection process, which reco
 -->
 <Printable>
 	<NavigatableLayout title='Resume - Dan Tran' class='prose-p:m-0 prose-ul:m-0 prose-li:m-0'>
-		<main class='flex flex-col gap-2 p-12 leading-relaxed'>
+		<main class='flex flex-col gap-4 p-12 leading-relaxed'>
 			<div class='flex flex-col items-center justify-between sm:flex-row'>
 				<div class='title-group text-center sm:text-left'>
 					<h1 class='m-0 -ml-1 text-left text-6xl font-semibold'>{about.name}</h1>
@@ -262,14 +279,11 @@ UQ is committed to a fair, equitable and inclusive selection process, which reco
 			<p>{about.description}</p>
 			<SkillsList title='Technical skills' skills={technicalSkills} />
 			<SkillsList title='Soft skills' skills={softSkills} />
-			<Education title='Education' degrees={education} />
 			<!-- <Section title='Professional Experience' /> -->
-			<WorkExperience title='Professional Experience' experience={work} />
+			<WorkExperience title='Relevant Experience' experience={work} />
+			<Education title='Education' degrees={education} />
 			<!-- <Section title='Academic Projects' /> -->
 			<!-- <Section title='Awards' /> -->
-			<Section title='Referees'>
-				<p>Provided upon request</p>
-			</Section>
 		</main>
 	</NavigatableLayout>
 </Printable>
@@ -278,8 +292,8 @@ UQ is committed to a fair, equitable and inclusive selection process, which reco
 	:root {
 		--color-primary: #52247a;
 		line-height: 3;
-		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-		font-size: 18px;
+		/* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+		font-size: 16px;
 	}
 
 	h1,

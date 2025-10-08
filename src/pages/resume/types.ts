@@ -10,12 +10,17 @@ export type EducationList = {
 	details: string[]
 }[]
 
+export type NestedDetail = {
+	summary: string
+	details: NestedDetail[] | string[]
+}
+
 export type WorkList = {
 	title: string
 	company: string
 	summary: string
 	duration: string
-	details: string[]
+	details: string[] | NestedDetail[]
 }[]
 
 export type About = {

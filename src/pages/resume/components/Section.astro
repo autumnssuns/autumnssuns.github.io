@@ -10,8 +10,8 @@ const label = title?.toUpperCase()
 ---
 
 <section class={twMerge('flex flex-col gap-2', className)}>
-	<div class='title inline-flex w-full flex-col items-start justify-between border-b-2'>
-		<div class='text-2xl font-bold'>
+	<div class='title inline-flex w-full flex-col items-start justify-between border-b'>
+		<div class='mb-2 text-2xl font-medium'>
 			{label}
 		</div>
 	</div>
@@ -22,5 +22,10 @@ const label = title?.toUpperCase()
 	.title {
 		border-color: var(--color-primary);
 		color: var(--color-primary);
+	}
+
+	hr {
+		@apply my-0 h-[1px] w-full border-0;
+		background: linear-gradient(to right, var(--color-primary));
 	}
 </style>
