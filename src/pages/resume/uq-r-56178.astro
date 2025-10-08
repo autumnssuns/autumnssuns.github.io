@@ -9,178 +9,18 @@ import type { About, EducationList, SkillList, WorkList } from './types'
 import Education from './sections/Education.astro'
 import WorkExperience from './sections/WorkExperience.astro'
 
-const about: About = {
-	name: 'Dan Tran',
-	title: 'Full Stack Developer',
-	contacts: [
-		{
-			type: 'email',
-			label: 'dan.k.tran@gmail.com',
-			value: 'mailto:dan.k.tran@gmail.com',
-			icon: 'mdi:email'
-		},
-		{
-			type: 'link',
-			label: 'autumnssuns',
-			value: 'https://github.com/autumnssuns',
-			icon: 'mdi:github'
-		},
-		{
-			type: 'link',
-			label: 'dan.k.tran',
-			value: 'https://www.linkedin.com/in/dan-k-tran',
-			icon: 'mdi:linkedin'
-		}
-	],
-	description:
-		// "Highly experienced Full Stack Developer and Technical Leader specialising in designing, architecting, and deploying complex digital research infrastructure. Currently serving as a Research Software Developer at the University of Queensland, with a proven track record of translating abstract research needs into robust, scalable, and high-performance web applications. Expertise is deeply aligned with the UQ Research Computing Centre's requirements, encompassing modern full-stack development with TypeScript, React, Svelte, and serverless architectures (AWS, Lambda, API Gateway, CDK). Adept at providing technical leadership, managing multiple critical projects independently, and ensuring high-quality API design and actionable technical documentation for diverse stakeholders. Passionate about leveraging technology to drive world-class discovery in the research sector."
-		// 'Motivated Full Stack Developer with a strong foundation in developing digital systems to enhance research and educational experiences. With over 4 years of experience in software development in the higher education sector, I have a proven track record in building critical software applications for various nation-wide research projects. With a people-centric approach to software engineering and collaboration with researchers on a national scale, I am passionate about leveraging technology to create meaningful impacts and drive innovation in the research community. Committed to continuous learning, I am seeking the opportunity to take ownership of projects that challenge unsolved problems.'
-		'Highly motivated and experienced research software developer with Computer Science and Mathematics background. Proven track record in building critical full-stack applications for international and Australia-wide research projects. User-centric, autonomous, and well-versed in research environments, I excel in providing technical leadership and delivering high-impact solutions.'
-}
+/*
 
-const technicalSkills: SkillList = [
-	{
-		type: 'Languages',
-		skills: ['TypeScript', 'Python', 'HTML', 'CSS', 'SQL', 'C#', 'Java']
-	},
-	{
-		type: 'Frameworks',
-		skills: ['Svelte', 'ReactJS', 'Tailwind CSS', 'ExpressJS', 'ASP.NET MVC', 'Entity Framework']
-	},
-	{
-		type: 'Systems Design',
-		skills: [
-			'AWS (S3, RDS, Lambda, API Gateway)',
-			'OpenSearch',
-			'Docker',
-			'IaC (CDK)',
-			'Git',
-			'GitHub'
-		]
-	}
-]
+The Research Computing Centre
 
-const softSkills: SkillList = [
-	{
-		type: 'Communication',
-		skills: ['Stakeholder Engagement', 'Workshop Facilitation', 'Technical Writing', 'Presentation']
-	},
-	{
-		type: 'Organisation',
-		skills: ['Critical and Systematic Thinking', 'Resources Management', 'Workflow Planning']
-	}
-]
+Full-time, fixed-term position until October 2027  
 
-const education: EducationList = [
-	{
-		title:
-			'Bachelor of Information Technology (Computer Science)\nBachelor of Mathematics (Applied & Computational Mathematics)',
-		provider: 'Queensland University of Technology',
-		duration: 'Feb 2019 - Dec 2023',
-		details: ['GPA: 7.0/7.0']
-	}
-]
+Base salary will be in the range $115,645 - $129,654+ 17% Superannuation (HEW Level 8) 
 
-const work: WorkList = [
-	{
-		title: 'Research Software Developer',
-		company:
-			'ARC Centre of Excellence for Automated Decision-Making and Society; Australian Internet Observatory\nThe University of Queensland',
-		summary:
-			'Lead developer for strategic research computing projects, providing full-stack architecture and technical direction to deliver high-impact digital research infrastructure.',
-		duration: 'Jul 2024 - Present',
-		// details: [
-		// 	'Lead the full-stack development of the Australian Ad Observatory dashboard, enabling researchers to analyse over 100,000 digital advertisements.',
-		// 	'Engineer the front-end (TypeScript/Svelte) with virtualisation and caching to efficiently browse high-volume datasets.',
-		// 	'Design and implement an in-house Python API framework (deployed on AWS Lambda/API Gateway), integrating with AWS RDS and OpenSearch for fast, complex querying of a substantial, unstructured advertisement data.',
-		// 	'Collaborate closely with national research teams to gather requirements and manage project scope, ensuring alignment with research goals, technical feasibility, and timely delivery.',
-		// 	'Produce comprehensive product requirements documents, project plans, API documentation and user guides to ensure clarity and maintainability.',
-		// 	'Develop a bespoke PDF navigation application (Electron/React/TypeScript) supporting advanced, chronological annotation features to support Economic Justice Australia in analysing large volumes of legal documents.',
-		// 	'Manage automated pipelines for testing, building, and releasing software with GitHub Actions.',
-		// 	'Develop AI-powered data visualisation tools to support the analysis of complex digital social data to support cutting-edge research in social, economic, health and environmental issues.'
-		// ]
-		details: [
-			{
-				summary: 'Australian Ad Observatory Project',
-				details: [
-					'Lead the full-stack development of the Australian Ad Observatory dashboard, enabling researchers to analyse over 100,000 digital advertisements.',
-					'Engineer the front-end (TypeScript/Svelte) with virtualisation and caching to efficiently browse high-volume datasets.',
-					'Design and implement an in-house Python API framework (deployed on AWS Lambda/API Gateway), integrating with AWS RDS and OpenSearch for fast, complex querying of a substantial, unstructured advertisement data.',
-					'Collaborate closely with national research teams to gather requirements and manage project scope, ensuring alignment with research goals, technical feasibility, and timely delivery.',
-					'Produce comprehensive product requirements documents, project plans, API documentation and user guides to ensure clarity and maintainability.'
-				]
-			},
-			{
-				summary: 'Designing Automated Tools to Support Welfare Rights Advocacy Project',
-				details: []
-			},
-			{
-				summary: 'Other Initiatives',
-				details: []
-			},
-			{
-				summary: 'General Contributions',
-				details: []
-			}
-		]
-	},
-	{
-		title: 'Full Stack Web Developer',
-		company: 'STiMulate, Student Success Group | Queensland University of Technology',
-		summary:
-			'Executed the complete software development lifecycle for the Volunteer Rostering System, supporting thousands of staff and students annually.',
-		duration: 'Aug 2021 - Jun 2024',
-		details: [
-			'Developed and maintained a high-availability MVC web application with ASP.NET, Entity Framework, and MS SQL Server.',
-			'Execute the complete life-cycle of feature development: identifying demand, research, feasibility evaluation, implementation, testing, delivery, maintenance and operation.',
-			"Collaborated with QUT's infrastructure team to migrate data and deploy a new server with minimal downtime.",
-			'Reformed project management with GitHub Issues and Projects and enhancing system documentation with DocFX.',
-			'Engaged with stakeholders to analyse requirements in alignment with business goals and strategic directions.'
-		]
-	},
-	{
-		title: 'Software Developer',
-		company: 'Queensland University of Technology',
-		summary:
-			'Sole developer of a NodeJS application empowering the authoring of online learning materials at scale.',
-		duration: 'Feb 2024 - Jun 2024',
-		details: [
-			"Communicated with a small, dynamic team to steer the project's direction and handle arising requirements.",
-			'Designed and built a Node.js application featuring a customisable markdown processor and Canvas API integration to rapidly author online learning materials.',
-			'Successfully applied the application to deploy innovative Canvas pages, leading to a successful demonstration at the L&T Colloquium.',
-			'Managed the testing, deployment, and continuous integration of the software, while providing ongoing technical guidance to the team.',
-			'Exercise project management acumen through prioritisation and task delegation with GitHub Projects.'
-		]
-	},
-	{
-		title: 'Casual Academic',
-		company: 'Faculty of Science; QUT College | Queensland University of Technology',
-		summary:
-			'Taught and engaged 200+ students per semester in IT and Engineering units, instructing core software development concepts.',
-		duration: 'Mar 2022 - Jun 2024',
-		details: [
-			'Tutor in various IT and Engineering units, teaching programming languages: Python, C#, Java, JavaScript and their frameworks.',
-			'Imparted important software development concepts: OOP, Agile and Iterative Development, Source Control with Git, Test Driven Development and CI/CD.',
-			'Achieved 91% satisfaction with teaching approach in Student Voice Survey.'
-		]
-	},
-	{
-		title: 'Unit Development Assistant',
-		company: 'Faculty of Science | Queensland University of Technology',
-		duration: 'Mar 2023 - Jun 2024',
-		summary:
-			'Supported the administration of various units with technical expertise and content development.',
-		details: [
-			'Developed teaching materials with 50+ Canvas pages deployed for 5 units, ensuring alignment with curriculum objectives.',
-			'Collaborated closely with course coordinators to gather insights and expectations from students, allowing the creation of engaging and relevant training materials.',
-			'Configured a container- and cloud-based automatic code marking system serving 1000+ students per semester, reducing manual grading time by 50%.'
-		]
-	}
-]
----
+Based at our St. Lucia Campus
 
-<!--
 About This Opportunity  
+
 This is an exciting chance to shape the future of digital research at UQ by taking the lead in designing and building the web applications that power world-class discovery. In this role, you’ll contribute to both the front-end and back-end development of innovative platforms such as the UQ Digital Research Infrastructure Portal, ensuring our research community has the tools they need to thrive.
 
 As part of a small, dynamic, and collaborative team of specialists, you’ll enjoy the freedom to explore emerging technologies, experiment with new solutions, and drive innovation in a supportive and forward-thinking environment. With flexible working options and the autonomy to take ownership of your projects, this is an opportunity to expand your technical expertise while making a real impact on research that matters.
@@ -262,14 +102,383 @@ Our strength as an institution lies in our diverse colleagues. We're dedicated t
   
 
 UQ is committed to a fair, equitable and inclusive selection process, which recognises that some applicants may face additional barriers and challenges which have impacted and/or continue to impact their career trajectory. Candidates who don’t meet all criteria are encouraged to apply and demonstrate their potential. The selection panel considers both potential and performance relative to opportunities when assessing suitability for the role.  
--->
+ */
+
+/* Cover Letter - Notes
+
+What I know about Ashley Wright
+
+Current role & domain
+
+Ashley Wright is Senior Manager / Senior Systems Engineer (or variously titled “Senior Research Computing Systems Engineer / Senior Manager, Digital Research Infrastructure”) at UQ’s Research Computing Centre. Research Computing Centre+1
+
+He is part of the Core Technologies / Digital Research Infrastructure group within RCC. Research Computing Centre+1
+
+Expertise / Skills
+
+
+
+Deep experience in HPC systems, large-data management, code optimisation. Research Computing Centre
+
+Also experience with systems & service management and monitoring, networking, Linux programming. Research Computing Centre+1
+
+Background & education
+
+
+
+He holds degrees in both Information Technology (software engineering and networking) and Mathematics (computational, statistics, finance). Research Computing Centre+1
+
+He previously worked at QUT (Queensland University of Technology) for more than 15 years before moving to RCC at UQ, helping with HPC and data analysis. Research Computing Centre+1
+
+Current initiatives / projects
+
+
+
+Involved with “Bunya”, which is UQ’s new supercomputer / HPC cluster, adopting an “evergreen and bespoke” approach: meaning incremental component additions, diverse system configurations, etc. eResearch Australasia+2Research Computing Centre+2
+
+Participation in UQ’s research computing infrastructure, cloud platforms (eResearch cloud), data workflows, researcher support. Research+2Research Computing Centre+2
+
+Values / attitudes
+
+
+
+He seems to value technological change and seeing how researchers use computing and data to investigate and solve problems. Research Computing Centre
+
+Interested in bridging hardware/software gaps, making research infrastructure work well for a wide variety of research disciplines. Research Computing Centre+1
+
+What would likely resonate with him / what to keep in mind
+
+Given that background, here are some points that your similarity to him (background in IT + Mathematics, moving from QUT to UQ) could connect with, plus some angles to emphasize:
+
+
+
+Technical depth and interdisciplinary flexibility
+
+He values people who are comfortable both with infrastructure (hardware, HPC, networks, system ops) and with mathematical / data-driven work (optimisation, computational stats, etc.).
+
+So highlighting your experience in both those spheres will help: e.g. projects where you needed to optimize code or data pipelines, work with large data sets, any HPC or cloud experience, plus your math skills (statistical / computational modelling, algorithmic thinking, etc.).
+
+Experience with HPC / scalable systems / workflows
+
+Because RCC works with supercomputers, clusters, cloud infrastructure, workflows etc., any experience you have in dealing with large compute jobs, performance bottlenecks, containerization, managing jobs in cluster or cloud, etc., would align well.
+
+Systems & operations mindset
+
+Since he’s done systems/service management, monitoring, operations, etc., showing you understand operational concerns: reliability, monitoring, maintainability, performance, documentation, reproducible environments.
+
+Appreciation for researcher/user perspective
+
+From what I read, RCC supports researchers across disciplines. So someone who can understand what a researcher needs, can translate between the computational infrastructure and the science/discipline tasks, would likely be valuable.
+
+Adaptability and continuous improvement
+
+For example, with Bunya: the approach of building a cluster that can evolve over time, with incremental upgrades, mixed component configurations. That suggests he likes people who think in terms of modularity, maintainability, evolving systems rather than “build once and done”.
+
+Collaboration & communication
+
+Because RCC interacts with researchers in many fields, vendors/partners (as seen in vendor meetings, etc.), and participates in conferences. Being able to communicate both technically and in researcher-friendly terms is likely helpful.
+
+Shared institutional knowledge
+
+Your having moved from QUT to UQ gives you a shared background. If you can articulate what you learned at QUT that's applicable (for example, challenges in compute/data infrastructure, or services), that can help you show you understand the domain, the transition, and can bring value with both experiences.
+
+How to gear your application / interview to appeal
+
+Here are actionable things you might do / highlight:
+
+
+
+In your cover letter or interview, mention your dual background (IT + Maths), and give concrete examples/projects where you applied both (say building a pipeline, optimizing code, handling statistical / computational tasks, or data modelling + infrastructure).
+
+If you’ve done anything with HPC (job schedulers, clusters, parallel computing, code optimisation, performance profiling), show that.
+
+If you have experience with cloud infrastructure, data storage, workflow tools (e.g. Slurm, Kubernetes, Docker, Nextflow, GitLab CI/CD, etc.), bring them up.
+
+Emphasize what outcomes you achieved (faster run times, more stable systems, improved researcher experience, more scalable workflows) rather than only technical details.
+
+Show interest in evolving systems and in thinking of infrastructure as living systems (maintenance, upgrades, monitoring, evolving hardware/software).
+
+Demonstrate that you are user/researcher-oriented: that you can collaborate with non-computational people, understand their needs, translate technical constraints into solutions researchers can adopt.
+
+Show awareness of the latest trends in HPC / research infrastructure: perhaps mention things like energy efficiency, cloud vs HPC trade-offs, heterogeneous hardware (GPUs, accelerators), data management challenges, reproducible research, etc. Since RCC and Ashley have been involved in conferences (ISC, etc.), showing you're up-to-date is good. Research Computing Centre+2Research Computing Centre+2
+
+Use your QUT-to-UQ move as a strength: you know about both institutions (their challenges, culture, user expectations), which could help in transitioning or in helping coordinate or integrate services.
+
+--------------------------------------------------------------------------------
+
+Cover Letter - Major Points I want to highlight (not exhaustive and doesn't have to be in this order)
+
+- Experience in the research sector, understanding researcher needs and workflows
+- Strong technical skills in full-stack development (TypeScript, React, Svelte, AWS, serverless architectures)
+- Ability to work independently and take ownership of projects, while also collaborating effectively with diverse teams
+- Passion for continuous learning and staying updated with emerging technologies
+- Alignment with UQ's values of innovation, collaboration, and impact in research
+- Enthusiasm for contributing to UQ's digital research infrastructure and supporting world-class discovery
+- Background in both IT and Mathematics, similar to Ashley Wright, showing interdisciplinary flexibility
+
+Ad Observatory:
+- Sole developer
+- Full-stack development (TypeScript/Svelte front-end, Python API back-end)
+- AWS Lambda, API Gateway, RDS, OpenSearch
+- User-centric design, collaborating with national research teams
+
+PDF Navigation App:
+- Sole developer, collaborated with UI/UX designer
+
+--------------------------------------------------------------------------------
+
+Cover Letter - Content
+
+09 October 2025
+
+Dear Mr Wright and the recruiting team,
+
+Re: Full Stack Developer, reference number: R-56178
+
+I am writing to express my interest in the Full Stack Developer position (Ref: R-56178) at the UQ Research Computing Centre. I possess a Bachelor of Computer Science and Computational Mathematics, and over four years experience as a full-stack web developer, working predominantly in the higher education sector at QUT and UQ. I have been a driving force behind building critical software applications that support both international and Australia-wide research projects. Interested in making a larger impact to UQ's research computing community, I see this role as the perfect next milestone in my career.
+
+I currently work as a research software developer at the ARC Centre of Excellence in Automated-Decision Making (ADM+S), UQ Centre for Digital Cultures and Society (DCS), and the Australian Internet Observatory (AIO) where I have contributed to research infrastructure that support research in social, economic, environmental, ethical and legal issues. Through this role, I have gained extensive experience in full-stack web application design and development, utilising a wide range of programming languages, frameworks, development tools and architectures, including TypeScript, Python, Svelte 5, ReactJS, Electron, GitHub Actions, Docker and several AWS Services (EC2, S3, RDS, OpenSearch, Lambda, API Gateway). Additionally, I have been actively engaging in co-design processes, participating in data collection, facilitating workshops, data analysis, as well as contributing to the overall research project planning at a more strategic level in collaboration with multi-stakeholder interdisciplinary teams involving academics at different levels (Professors, Post-doctorates, PhD students) and universities as well as industry partners from the Foundation of Alcohol Research and Education (FARE), Economic Justice Australia, Services Australia, Google, etc. As a result, I possess a strong understanding in research infrastructure development and providing computational support in a fast-paced environment. I bring a proven ability to deliver user-focused, high-impact and scalable applications that bridges technical and research needs – skills that I believe align closely with the responsibilities of this role.
+
+During my time at DCS, I was tasked with developing a portal for data collection, and additionally took the initiative to build a web-based data monitoring dashboard. During the second month of my role, the Australian Ad Observatory project needed to collect advertisement information on Facebook and Instagram Meta’s Data Download Packages. I researched, adopted and deployed a European full-stack software for data donation, where users can upload their DDPs requested from Meta. I rewrote the software, which used ReactJS and Python, to connect with an AWS Lambda function that stores data in an S3 bucket. Besides the data collection, I took part in data analysis by performing text classification with the FastText word embedding model, allowing researchers to quickly identify relevant keywords in the DDPs. Seeing the need for data monitoring during the study period, I prototyped a dashboard to display the keywords alongside ads collected from the Facebook and Instagram apps from Android devices via Australian Mobile Ad Toolkit developed by a colleague in the ADM+S. The dashboard was later used to support interviewing participants in the study, leading to a successful pilot study and a published research report. Since October 2024, my initiative has evolved into a full-stack Australian Ad Observatory Dashboard and is now serving over 130,000 advertisements collected from Facebook, Instagram, TikTok and YouTube across 600+ users. The dashboard empowers researchers from international institutions to sign in with SSO, create projects, monitor data collections, query ads and export data for analysis. This project includes a front-end in Svelte 5 with TypeScript, as well as a bespoke Python API framework deployed on AWS Lambda and API Gateway, integrated with AWS RDS (with PostgreSQL) and OpenSearch for fast, complex querying of substantial, unstructured advertisement data. In conjunction with a serverless architecture, optimisation techniques including virtualisation and caching were used to handle high-volume datasets effectively. The dashboard has also been inspiring the development of the AIO’s Lab Workspace that I am also a key contributor, which aims to provide a comprehensive set of tools for visualising and analysing rich digital social data. 
+
+Additionally, my work with the ADM+S has ranged from developing static web applications, cross-platform desktop applications to web scraping with EC2-powered rotating proxies. Most notably, I was largely involved in co-designing a desktop document tool to support welfare rights lawyers in making sense of large Freedom of Information documents, comically referred to as “bricks” in the community. Through tight collaboration with a UI/UX designer, Economic Justice Australia’s representatives and researchers, I led the implementation of “Mortar”, which supports the loading and navigation of large volumes of PDF documents with thousands of pages, page tagging, highlighting, commenting and timeline-building. The use of ElectronJS allows me to leverage my knowledge in web development with ReactJS and TypeScript to create a cross-platform desktop application. This project also presented me with the opportunity to learn and practice my skills across all aspects of software development, including 1) collaborative design with Figma, 2) project management with GitHub Issues and Projects, 3) CI/CD with GitHub Actions, 4) software distribution with GitHub Releases and 5) documentation hosting with GitHub Pages. Given the sensitive nature of the legal documents as well as the resource constraints of community legal centres, I took careful consideration of the performance, security and ethical implications of the application. The application was well-received by the partner, who praised its ease of use and the significant time savings it provided in their document analysis workflow.
+
+Besides the above major projects, I am also involved in smaller initiatives in ADM+S. One such initiative is the Trauma-Informed Algorithmic Assessment Toolkit (TIAKIT), which provides a reflective, constructive exercise to help algorithmic supported services be cognisant and inclusive of the diversity of human experience. This project has gained support from several partners, including Services Australia, Australia Red Cross, Lifeline, Anglicare and others. Built as a static web application using Svelte, this application uses browser’s IndexedDB API and the File System API to handle all data locally, addressing the privacy considerations of the participating organisations. Outside of supporting traditional research outputs, I have also been involved in a card-based co-design tool to support collaborative workshops for AI Policy Design. This tool was developed in collaboration with ADM+S researcher and an industry partner from Google, and has been extended into a plan for a full-stack software service to support more use cases and a wider audience.
+
+My unique situation as a jointly funded employee between the ADM+S, DCS and AIO has positioned me to work with diverse teams of different sizes and dynamics, ranging from small, agile teams to larger, more structured groups. This experience has also required me to navigate multiple priorities with tight timelines, honing my ability to manage my workload effectively while maintaining high-quality standards. Outside of software development, I have also been involved in workshop facilitation, tools demonstration and feedback sessions. Combined with my previous experience as a Full Stack Web Developer, Research Assistant and Casual Academic at QUT, these experiences have strengthened my adaptability and communication skills, allowing me to comfortably work independently and collaboratively with diverse stakeholders across a wide range of research activities.
+
+Committed to continuous learning and staying updated with emerging technologies, I am passionate about leveraging ever-evolving digital solutions to create meaningful impacts and drive innovation in the research community. I believe the Full Stack Developer role at the Research Computing Centre aligns perfectly with my career aspirations and values, and I am excited about the opportunity to make a larger impact in UQ's research community.
+
+I greatly appreciate your time and effort in considering my application and I look forward to the opportunity to learn more about the Centre and discuss how my skills and experiences can contribute to its mission.
+
+Yours sincerely,
+
+Dan Tran
+
+
+--------------------------------------------------------------------------------
+
+Selection Criteria
+
+Extensive experience in web development, software engineering, or a related field, with a strong technical foundation.
+
+Proven expertise in modern web development standards and full-stack application design.
+
+Solid understanding of software architecture, database design, and API development.
+
+Skilled in TypeScript, React, or similar frameworks, with a track record of building scalable solutions.
+
+Comfortable working independently and collaboratively, managing multiple priorities under tight deadlines.
+
+Effective at communicating with diverse stakeholders and producing clear, actionable technical documentation.
+
+
+*/
+
+const about: About = {
+	name: 'Dan Tran',
+	title: 'Full Stack Developer',
+	contacts: [
+		{
+			type: 'email',
+			label: 'dan.k.tran@gmail.com',
+			value: 'mailto:dan.k.tran@gmail.com',
+			icon: 'mdi:email'
+		},
+		{
+			type: 'link',
+			label: 'autumnssuns',
+			value: 'https://github.com/autumnssuns',
+			icon: 'mdi:github'
+		},
+		{
+			type: 'link',
+			label: 'dan.k.tran',
+			value: 'https://www.linkedin.com/in/dan-k-tran',
+			icon: 'mdi:linkedin'
+		}
+		// {
+		// 	type: 'text',
+		// 	label: '0452 413 631',
+		// 	value: 'tel:+61452413631',
+		// 	icon: 'mdi:phone'
+		// }
+	],
+	description:
+		// "Highly experienced Full Stack Developer and Technical Leader specialising in designing, architecting, and deploying complex digital research infrastructure. Currently serving as a Research Software Developer at the University of Queensland, with a proven track record of translating abstract research needs into robust, scalable, and high-performance web applications. Expertise is deeply aligned with the UQ Research Computing Centre's requirements, encompassing modern full-stack development with TypeScript, React, Svelte, and serverless architectures (AWS, Lambda, API Gateway, CDK). Adept at providing technical leadership, managing multiple critical projects independently, and ensuring high-quality API design and actionable technical documentation for diverse stakeholders. Passionate about leveraging technology to drive world-class discovery in the research sector."
+		// 'Motivated Full Stack Developer with a strong foundation in developing digital systems to enhance research and educational experiences. With over 4 years of experience in software development in the higher education sector, I have a proven track record in building critical software applications for various nation-wide research projects. With a people-centric approach to software engineering and collaboration with researchers on a national scale, I am passionate about leveraging technology to create meaningful impacts and drive innovation in the research community. Committed to continuous learning, I am seeking the opportunity to take ownership of projects that challenge unsolved problems.'
+		'Highly motivated and experienced research software developer with Computer Science and Mathematics background. Proven track record in building critical full-stack applications for international and Australia-wide research projects. User-centric, autonomous, and well-versed in research environments, I excel in providing technical leadership and delivering high-impact solutions.'
+}
+
+const technicalSkills: SkillList = [
+	{
+		type: 'Languages',
+		skills: ['TypeScript', 'Python', 'HTML', 'CSS', 'SQL', 'C#', 'Java']
+	},
+	{
+		type: 'Frameworks',
+		skills: ['Svelte', 'ReactJS', 'Tailwind CSS', 'ExpressJS', 'ASP.NET MVC', 'Entity Framework']
+	},
+	{
+		type: 'Systems Design',
+		skills: [
+			'AWS (S3, RDS, Lambda, API Gateway)',
+			'OpenSearch',
+			'Docker',
+			'IaC (CDK)',
+			'Git',
+			'GitHub'
+		]
+	}
+]
+
+const softSkills: SkillList = [
+	{
+		type: 'Communication',
+		skills: ['Stakeholder Engagement', 'Workshop Facilitation', 'Technical Writing', 'Presentation']
+	},
+	{
+		type: 'Organisation',
+		skills: ['Critical and Systematic Thinking', 'Resources Management', 'Workflow Planning']
+	}
+]
+
+const education: EducationList = [
+	{
+		title:
+			'Bachelor of Information Technology (Computer Science)\nBachelor of Mathematics (Applied & Computational Mathematics)',
+		provider: 'Queensland University of Technology',
+		duration: 'Feb 2019 - Dec 2023',
+		details: ['GPA: 7.0/7.0']
+	}
+]
+
+const work: WorkList = [
+	{
+		title: 'Research Software Developer',
+		company:
+			'ARC Centre of Excellence for Automated Decision-Making and Society; Australian Internet Observatory\nThe University of Queensland',
+		summary:
+			'Lead developer for strategic research computing projects, providing full-stack architecture and technical direction to deliver high-impact digital research infrastructure.',
+		duration: 'Jul 2024 - Present',
+		// details: [
+		// 	'Lead the full-stack development of the Australian Ad Observatory dashboard, enabling researchers to analyse over 100,000 digital advertisements.',
+		// 	'Engineer the front-end (TypeScript/Svelte) with virtualisation and caching to efficiently browse high-volume datasets.',
+		// 	'Design and implement an in-house Python API framework (deployed on AWS Lambda/API Gateway), integrating with AWS RDS and OpenSearch for fast, complex querying of a substantial, unstructured advertisement data.',
+		// 	'Collaborate closely with national research teams to gather requirements and manage project scope, ensuring alignment with research goals, technical feasibility, and timely delivery.',
+		// 	'Produce comprehensive product requirements documents, project plans, API documentation and user guides to ensure clarity and maintainability.',
+		// 	'Develop a bespoke PDF navigation application (Electron/React/TypeScript) supporting advanced, chronological annotation features to support Economic Justice Australia in analysing large volumes of legal documents.',
+		// 	'Manage automated pipelines for testing, building, and releasing software with GitHub Actions.',
+		// 	'Develop AI-powered data visualisation tools to support the analysis of complex digital social data to support cutting-edge research in social, economic, health and environmental issues.'
+		// ]
+		details: [
+			{
+				summary: 'Australian Ad Observatory Project:',
+				details: [
+					"Extend an [open-source full-stack software (ReactJS, Python) for data donation](https://github.com/ADMSCentre/ad-data-donation), enabling users to upload their ads information from Meta's Data Download Packages (DDPs)",
+					'Lead the full-stack development of the Australian Ad Observatory dashboard, enabling researchers to analyse over 130,000 digital advertisements.',
+					'Engineer the front-end (TypeScript/Svelte) with virtualisation and caching to efficiently browse high-volume datasets.',
+					'Design and implement a RESTful API with an in-house Python framework (deployed on AWS Lambda/API Gateway), integrating with AWS RDS and OpenSearch for fast, complex querying of a substantial, unstructured advertisement data.',
+					'Produce API documentation with Swagger and user guides to ensure clarity and maintainability.'
+				]
+			},
+			{
+				summary: 'Australian Internet Observatory:',
+				details: [
+					'Contribute to the development of the [AIO Lab Workspace](https://aio2024.cloud.edu.au/lab/), a comprehensive set of tools for visualising and analysing rich digital social data.',
+					'Leverage Jira and Confluence to manage project tasks and documentation in an Agile environment.',
+					'Generate technical reports to communicate project progress and findings to stakeholders, including the Australian Research Data Commons (ARDC).'
+				]
+			},
+			{
+				summary: 'Designing Automated Tools to Support Welfare Rights Advocacy Project:',
+				details: [
+					'Develop [Mortar](https://admscentre.github.io/mortar-release/), a document management and navigation tool to support welfare rights lawyers in analysing large volumes of legal documents.',
+					'Utilise web technologies (ReactJS, TypeScript, Electron) for cross-platform desktop application development.',
+					'Use SQLite with TypeORM to manage local data storage, ensuring data privacy and security.',
+					'Manage automated pipelines for building and releasing software with GitHub Actions and GitHub Releases.',
+					'Manage and document project tasks with GitHub Issues and GitHub Projects.',
+					'Collaborate closely with UI/UX designers, researchers and community legal centres to create a user-friendly application.'
+				]
+			},
+			{
+				summary: 'Other Initiatives:',
+				details: [
+					'Develop [TIAKIT](https://admscentre.github.io/tiakit/), a static web application (Svelte/TypeScript) to support organisations in evaluating their algorithmic systems from a trauma-informed perspective.',
+					'Develop a [card-based co-design tool](https://admscentre.github.io/ai-policy-design-toolkit/2025-adms-symposium?card_ids=0%2C0%2C0&column_id=0) to support collaborative workshops for AI Policy Design with ADM+S researchers and an industry partner from Google.',
+					'Orchestrate web scraping with EC2-powered rotating proxies to collect 12,000+ quotes from comprehensive car insurance providers.'
+				]
+			},
+			{
+				summary: 'General Contributions:',
+				details: [
+					'Work with technical and non-technical stakeholders on a wide range of multidisciplinary projects.',
+					'Iterate on solutions through co-design and user feedback to improve functionality and user experience.'
+				]
+			}
+		]
+	},
+	{
+		title: 'Full Stack Web Developer',
+		company: 'STiMulate, Student Success Group\nQueensland University of Technology',
+		summary:
+			'Executed the complete software development lifecycle for the Volunteer Rostering System, supporting thousands of staff and students annually.',
+		duration: 'Aug 2021 - Jun 2024',
+		details: [
+			'Developed and maintained an MVC web application with ASP.NET, Entity Framework, and MS SQL Server.',
+			'Execute the complete life-cycle of feature development: identifying demand, research, feasibility evaluation, implementation, testing, delivery, maintenance and operation.',
+			"Collaborated with QUT's infrastructure team to migrate data and deploy a new server with minimal downtime.",
+			'Reformed project management with GitHub Issues and Projects and enhancing system documentation with DocFX.',
+			'Engaged with stakeholders to analyse requirements in alignment with business goals and strategic directions.'
+		]
+	},
+	{
+		title: 'Research Assistant (Software Developer)',
+		company: 'Queensland University of Technology',
+		summary:
+			'Sole developer of a NodeJS application empowering the authoring of online learning materials at scale.',
+		duration: 'Feb 2024 - Jun 2024',
+		details: [
+			'Designed and built [Chancellor](https://chancellor-lms.github.io/chancellor-cli/), a Node.js in JavaScript application featuring a customisable markdown processor and Canvas API integration to rapidly author online learning materials.',
+			"Communicated with a small, dynamic team to steer the project's direction and handle arising requirements.",
+			'Successfully applied the application to deploy innovative Canvas pages, leading to a successful demonstration at the Learning & Teaching Colloquium.',
+			'Managed the testing, deployment, and continuous integration of the software, while providing technical guidance to users.',
+			'Developed comprehensive documentation to facilitate user onboarding and ensure maintainability.'
+		]
+	},
+	{
+		title: 'Casual Academic',
+		company: 'Faculty of Science; QUT College\nQueensland University of Technology',
+		summary:
+			'Taught and engaged 200+ students per semester in IT and Engineering units, instructing core software development concepts.',
+		duration: 'Mar 2022 - Jun 2024',
+		details: [
+			'Taught and contributed to numerous undergraduate science units covering several languages (Python, C#, Java, JavaScript, HTML, CSS) and major frameworks (.NET, ReactJS, ExpressJS).',
+			'Imparted important software development concepts: OOP, Agile and Iterative Development, Source Control with Git, Test Driven Development and CI/CD.',
+			'Developed and maintained extensive course materials including reading content, lab exercises and assessment items.',
+			'Configured Docker-based automatic code marking systems serving 1000+ students per semester, reducing manual grading time by 50%.',
+			'Achieved 91% satisfaction with teaching approach in Student Voice Survey.'
+		]
+	}
+	// {
+	// 	title: 'Work Integrated Learning',
+	// 	company: 'Economic Development Queensland (EDQ)\nThe University of Queensland',
+	// 	duration: 'Mar 2022 - Nov 2022',
+	// 	summary: '',
+	// 	details: [
+	// 		'Completed a final-year university project with EDQ as part of the Northshore Hamilton development project.',
+	// 		'Collaboratively researched, installed and configured several sensors in trash bins to monitor waste levels.'
+	// 	]
+	// }
+]
+---
+
 <Printable>
 	<NavigatableLayout title='Resume - Dan Tran' class='prose-p:m-0 prose-ul:m-0 prose-li:m-0'>
 		<main class='flex flex-col gap-4 p-12 leading-relaxed'>
 			<div class='flex flex-col items-center justify-between sm:flex-row'>
 				<div class='title-group text-center sm:text-left'>
 					<h1 class='m-0 -ml-1 text-left text-6xl font-semibold'>{about.name}</h1>
-					<h2 class='m-0 text-xl font-bold'>{about.title}</h2>
 				</div>
 				<Contacts
 					contacts={about.contacts}
@@ -278,7 +487,7 @@ UQ is committed to a fair, equitable and inclusive selection process, which reco
 			</div>
 			<p>{about.description}</p>
 			<SkillsList title='Technical skills' skills={technicalSkills} />
-			<SkillsList title='Soft skills' skills={softSkills} />
+			<!-- <SkillsList title='Soft skills' skills={softSkills} /> -->
 			<!-- <Section title='Professional Experience' /> -->
 			<WorkExperience title='Relevant Experience' experience={work} />
 			<Education title='Education' degrees={education} />
